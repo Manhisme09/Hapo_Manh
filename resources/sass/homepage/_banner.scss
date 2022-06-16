@@ -1,0 +1,61 @@
+$purple: #11114E;
+
+.banner_title {
+  position: absolute;
+  width: 513px;
+  height: 61px;
+  left: 59px;
+  top: 300px;
+}
+
+.banner_title_first {
+  font-family: 'UTM BryantLG';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: -0.05em;
+  color: $purple;
+  span {
+    font-family: 'UTM BryantLG';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: $purple;
+  }
+}
+
+.btn-start {
+  position: relative;
+  width: 377px;
+  height: 70px;
+  background: #B2D235;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  & .btn-start-title {
+    position: absolute;
+    top: 13px;
+    left: 50px;
+    font-family: 'UTM BryantLG';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+  }
+}
+
+.banner {
+    height: 655px;
+    background-size: cover;
+}
+
+.banner_bonus {
+  background-image: linear-gradient(to bottom ,#f9f8f8fb,#E5E5E5);
+  height: 150px;
+  box-shadow: 0px 0px 10px rgba(190, 188, 188, 0.25);
+  position: relative;
+}
+
+
