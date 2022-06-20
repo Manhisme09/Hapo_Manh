@@ -2,8 +2,7 @@ $purple: #11114E;
 
 .banner_title {
   position: absolute;
-  width: 513px;
-  height: 61px;
+  height: 100%;
   left: 59px;
   top: 300px;
 }
@@ -47,6 +46,7 @@ $purple: #11114E;
 }
 
 .banner {
+    width: 100%;
     height: 655px;
     background-size: cover;
 }
@@ -58,4 +58,80 @@ $purple: #11114E;
   position: relative;
 }
 
+// @media (max-width: 768px) and (min-width: 480px) {
+//   .banner {
+//     max-height: 40vw;
+//   }
+// }
+@media (max-width: 1024px) and (min-width: 480px) {
+  .banner {
+    max-height: 45vw;
+  }
+  .navbar-brand .logo-image {
+    max-height: 5vw;
+  }
+  .banner_title {
+    left: 59px;
+    top: 120px;
+  }
+  .banner_title_first {
+    font-size: 3.9vw;
+    margin-bottom: 0;
+    span {
+      font-size: 4vw;
+    }
+    img {
+      max-width: 5vw;
+ 
+    }
+  }
+  .banner_title_second {
+    font-size: 2vw;
+    margin-bottom: 0;
+  }
+  .btn-start {
+    max-width: 25vw;
+    max-height: 4vw;
+    & .btn-start-title {
+      font-size: 2vw;
+      left: 4vw;
+      top: 0vw;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .banner {
+    max-height: 45vw;
+  }
+}
 
+@media (max-width: 480px) {
+  .banner {
+    max-height: 45vw;
+  }
+  .banner_title {
+    left: 59px;
+    top: 225px;
+  }
+  .navbar-brand .logo-image {
+    max-height: 9vw;
+  }
+  .banner_title_first {
+    font-size: 8vw;
+  }
+  .banner_title_first span {
+    font-size: 30px;
+  }
+  .banner_title_second {
+    font-size: 14px;
+  }
+  .btn-start {
+    max-width: 75vw;
+    max-height: 12vw;
+    & .btn-start-title {
+      font-size: 5vw;
+      left: 14vw;
+      top: 1vw;
+    }
+  }
+}
