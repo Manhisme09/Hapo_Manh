@@ -46,6 +46,10 @@
     }
   }
 
+  .navbar-brand .logo-image {
+    max-height: 5vw;
+  }
+
   .navbar-light {
     & .navbar-nav {
       & .nav-link:hover {
@@ -71,6 +75,10 @@
         color: #B2D235;
       }
     }
+  }
+
+  .navbar-brand .logo-image {
+    max-height: 9vw;
   }
 }
 

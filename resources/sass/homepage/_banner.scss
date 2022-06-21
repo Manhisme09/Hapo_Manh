@@ -68,13 +68,12 @@ $purple: #11114E;
   .banner {
     max-height: 45vw;
   }
-  .navbar-brand .logo-image {
-    max-height: 5vw;
-  }
+
   .banner_title {
     left: 35px;
     top: 65px;
   }
+
   .banner_title_first {
     font-size: 3.9vw;
     margin-bottom: 0;
@@ -86,10 +85,12 @@ $purple: #11114E;
  
     }
   }
+
   .banner_title_second {
     font-size: 2vw;
     margin-bottom: 0;
   }
+
   .btn-start {
     max-width: 25vw;
     max-height: 4vw;
@@ -100,32 +101,30 @@ $purple: #11114E;
     }
   }
 }
-@media (min-width: 1024px) {
-  .banner {
-    max-height: 45vw;
-  }
-}
+
 
 @media (max-width: 480px) {
   .banner {
     max-height: 45vw;
   }
+
   .banner_title {
     left: 59px;
     top: 175px;
   }
-  .navbar-brand .logo-image {
-    max-height: 9vw;
-  }
+  
   .banner_title_first {
     font-size: 8vw;
   }
+
   .banner_title_first span {
     font-size: 30px;
   }
+
   .banner_title_second {
     font-size: 14px;
   }
+
   .btn-start {
     max-width: 75vw;
     max-height: 12vw;
@@ -135,4 +134,6 @@ $purple: #11114E;
       top: 1vw;
     }
   }
+
 }
+
