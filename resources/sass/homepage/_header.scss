@@ -36,12 +36,13 @@
   }
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 993px) and (min-width: 480px) {
   .navbar-nav{
     & .nav-item {
+      border-bottom: 1px solid #F1F1F1;
       &:hover { 
         background: #f8f9fa;
-        border-radius: 17px;
+        border-radius: 0%;
       }
     }
   }
@@ -62,9 +63,10 @@
 @media (max-width: 480px) {
   .navbar-nav{
     & .nav-item {
+      border-bottom: 1px solid #F1F1F1;
       &:hover { 
         background: #f8f9fa;
-        border-radius: 17px;
+        border-radius: 0%;
       }
     }
   }
