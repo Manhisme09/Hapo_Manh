@@ -1,0 +1,135 @@
+.container {
+    margin-top: -100px;
+}
+
+.card {
+    width: 355px;
+    height: 470px;
+    border-radius: 15px;
+    & .card-img-top {
+        background-color: #556598;
+        width: 354px;
+        height: 215px;
+        position: relative;
+        border-radius: 15px 15px 0 0;
+        & .logo {
+            background-image: url('../../assets/images/php.png');
+            background-size: cover;
+            width: 226px;
+            height: 125px;
+            position: absolute;
+            left: 72px;
+            top: 42px;
+        }
+    }
+
+    & .card-body {
+        text-align: center;
+        & .card-title{
+            color: $colorHapo;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: -0.05em;
+        }
+        & .card-text{
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .banner_bonus {
+      z-index: 0;
+      height: 380px;
+    }
+
+    .banner {
+        & .banner_title {
+          z-index: 1;
+        }
+    }
+
+    .container {
+        margin-top: -90px;
+        & .card {
+          width: 280px;
+          height: 389px;
+          margin: auto;
+          margin-bottom: 25px;
+          & .card-img-top {
+            width: 280px;
+            height: 163px;
+          }
+        }
+    }
+
+    .card {
+        & .card-img-top {
+            & .logo {
+                position: absolute;
+                left: 30px;
+                top: 20px;
+            }
+        }
+        & .card-body {
+            & .card-text {
+                width: 244px;
+                margin: auto;
+            }
+        }
+    }
+  
+}
+
+@media (max-width: 1024px) and (min-width: 480px) {
+    .container {
+        & .course.two {
+            margin: 25px 0 25px 0;
+        }
+    }
+    .card {
+        width: 680px;
+        height: 158.44px;
+        & .card-img-top {
+            width: 240px;
+            height: 158.44px;
+            border-radius: 15px 0 0 15px;
+            & .logo {
+                width: 166px;
+                height: 92.4px;
+                position: absolute;
+                left: 33px;
+                top: 38px;
+            }
+        }
+
+        & .card-body {
+            text-align: start;
+            & .card-title {
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                margin-left: 33px;
+                font-style: normal;
+            }
+            & .card-text {
+                font-size: 13px;
+                width: 420px;
+                margin-left: 34px;
+            }
+        }
+
+        & .btn-hapo {
+            width: 136px;
+            height: 31.53px;
+            position: absolute;
+            top: 118px;
+            left: 290px;
+            font-size: 13px;
+        }
+    }
+}
