@@ -1,12 +1,12 @@
 $purple: #11114E;
-.banner_title {
+.banner-title {
   position: absolute;
   height: 100%;
   left: 22px;
   top: 100px;
 }
 
-.banner_title_first {
+.banner-title-first {
   font-family: 'UTM BryantLG';
   font-style: normal;
   font-weight: 400;
@@ -32,7 +32,7 @@ $purple: #11114E;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
   cursor: pointer;
-  & .btn-start-title {
+  .btn-start-title {
     position: absolute;
     top: 13px;
     left: 50px;
@@ -46,10 +46,10 @@ $purple: #11114E;
 }
 
 .banner {
-    width: 100%;
-    height: 655px;
-    background-size: cover;
-    position: relative;
+  width: 100%;
+  height: 655px;
+  background-size: cover;
+  position: relative;
 }
 
 .banner_bonus {
@@ -64,12 +64,12 @@ $purple: #11114E;
     max-height: 45vw;
   }
 
-  .banner_title {
+  .banner-title {
     left: 35px;
     top: 65px;
   }
 
-  .banner_title_first {
+  .banner-title-first {
     font-size: 3.9vw;
     margin-bottom: 0;
     span {
@@ -81,7 +81,7 @@ $purple: #11114E;
     }
   }
 
-  .banner_title_second {
+  .banner-title-second {
     font-size: 2vw;
     margin-bottom: 0;
   }
@@ -89,7 +89,7 @@ $purple: #11114E;
   .btn-start {
     max-width: 25vw;
     max-height: 4vw;
-    & .btn-start-title {
+    .btn-start-title {
       font-size: 2vw;
       left: 4vw;
       top: 0vw;
@@ -102,27 +102,27 @@ $purple: #11114E;
     max-height: 45vw;
   }
 
-  .banner_title {
+  .banner-title {
     left: 59px;
     top: 175px;
   }
   
-  .banner_title_first {
+  .banner-title-first {
     font-size: 8vw;
   }
 
-  .banner_title_first span {
+  .banner-title-first span {
     font-size: 30px;
   }
 
-  .banner_title_second {
+  .banner-title-second {
     font-size: 14px;
   }
 
   .btn-start {
     max-width: 75vw;
     max-height: 12vw;
-    & .btn-start-title {
+    .btn-start-title {
       font-size: 5vw;
       left: 14vw;
       top: 1vw;
@@ -130,4 +130,3 @@ $purple: #11114E;
   }
 
 }
-
