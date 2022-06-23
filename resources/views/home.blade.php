@@ -19,7 +19,7 @@
 
 <section class="container">
     <div class="row">
-        <div class="course one col-lg-4">
+        <div class="course-one col-lg-4">
             <div class="card">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="course two col-lg-4">
+        <div class="course-two col-lg-4">
             <div class="card">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="course three col-lg-4">
+        <div class="course-three col-lg-4">
             <div class="card">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
@@ -68,6 +68,53 @@
             </div>
         </div>
 
+    </div>
+    <div class="other-course">
+        <p class="other-title">Other courses</p>
+    </div>
+    <div class="row other">
+        <div class="course-other-one col-lg-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="card-other-img-top col-lg-12 col-md-4">
+                        <div class="logo-other"></div>
+                    </div>
+                    <div class="card-body col-lg-12 col-md-8">
+                        <h5 class="card-title">PHP Tutorial</h5>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                        <a href="#" class="btn btn-hapo">Take This Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-other-two col-lg-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="card-other-img-top col-lg-12 col-md-4">
+                        <div class="logo-other"></div>
+                    </div>
+                    <div class="card-body col-lg-12 col-md-8">
+                        <h5 class="card-title">PHP Tutorial</h5>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                        <a href="#" class="btn btn-hapo">Take This Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-other-three col-lg-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="card-other-img-top col-lg-12 col-md-4">
+                        <div class="logo-other"></div>
+                    </div>
+                    <div class="card-body col-lg-12 col-md-8">
+                        <h5 class="card-title">PHP Tutorial</h5>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                        <a href="#" class="btn btn-hapo">Take This Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 @endsection
