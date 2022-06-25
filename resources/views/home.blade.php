@@ -4,8 +4,13 @@
 
 <section>
     <div class="banner" style="background-image: url('{{ asset('images/banner.png') }}');">
+<<<<<<< HEAD
         <div class="banner-title">
             <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img
+=======
+        <div class="banner_title">
+            <p class="banner_title_first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img
+>>>>>>> 5b9229d (#5 make why Hapolearn)
                             src="{{ asset('images/owl.png') }}" alt=""></span>!</span>
             </p>
             <p class="banner-title-second">Interactive lessons, "on-the-go" <br> practice, peer support.</p>
@@ -81,7 +86,8 @@
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
                         <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
+                            Media,...</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
                 </div>
@@ -95,7 +101,8 @@
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
                         <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
+                            Media,...</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
                 </div>
@@ -109,10 +116,57 @@
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
                         <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
+                            Media,...</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="view-all">
+        <a href="#">View All Our Courses <i class="fa-solid fa-arrow-right-long"></i> </a>
+    </div>
+</section>
+
+<section class="why-bg">
+    <div class="container-fluid">
+        <div class="row align-items-center ">
+            <div class="col-lg-5 col-md-7 col-sm-12 why-content ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h4 class="why-title">Why HapoLearn?</h4>
+                        <div class="rotate-laptop">
+                            <img src="{{ asset('images/laptopmini.png') }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="why-list">
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons,
+                            "on-the-go"
+                            practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go"
+                            practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go"
+                            practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go"
+                            practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go"
+                            practice, peer support.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-5 col-sm-12">
+                <img src="{{ asset('images/computer.png') }}" alt="why" class="why-img">
             </div>
         </div>
     </div>

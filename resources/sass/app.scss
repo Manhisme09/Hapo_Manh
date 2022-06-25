@@ -11,3 +11,12 @@
 @import 'homepage/header';
 @import 'homepage/banner';
 @import 'homepage/content';
+@import 'homepage/whybanner';
+
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";

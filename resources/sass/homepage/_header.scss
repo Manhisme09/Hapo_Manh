@@ -12,7 +12,7 @@
   .nav-item {
     margin-right: 20px;
     &:hover { 
-      background: #B2D235;
+      background: $colorHapo;
       border-radius: 17px;
     }
   }
@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 993px) and (min-width: 480px) {
+@media (max-width: 1024px) and (min-width: 740px) {
   .navbar-nav{
     .nav-item {
       border-bottom: 1px solid #F1F1F1;
@@ -48,15 +48,21 @@
   }
 
   .navbar-light {
+<<<<<<< HEAD
     .navbar-nav {
       .nav-link:hover {
         color: #B2D235;
+=======
+    & .navbar-nav {
+      & .nav-link:hover {
+        color: $colorHapo;
+>>>>>>> 5b9229d (#5 make why Hapolearn)
       }
     }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 739px) {
   .navbar-nav{
     .nav-item {
       border-bottom: 1px solid #F1F1F1;
@@ -68,9 +74,15 @@
   }
 
   .navbar-light {
+<<<<<<< HEAD
     .navbar-nav {
       .nav-link:hover {
         color: #B2D235;
+=======
+    & .navbar-nav {
+      & .nav-link:hover {
+        color: $colorHapo;
+>>>>>>> 5b9229d (#5 make why Hapolearn)
       }
     }
   }
