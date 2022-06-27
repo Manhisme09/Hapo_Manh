@@ -1,358 +1,372 @@
 .container {
-    margin-top: -100px;
+  margin-top: -100px;
 }
 
 .row {
-    margin-bottom: 65px;
+  margin-bottom: 65px;
 }
 
 .card {
-    width: 355px;
-    height: 470px;
-    border-radius: 15px;
-    .card-img-top {
-        width: 354px;
-        height: 215px;
-        position: relative;
-        border-radius: 15px 15px 0 0;
-        .logo {
-            background-size: cover;
-            width: 226px;
-            height: 125px;
-            position: absolute;
-            left: 72px;
-            top: 42px;
-        }
-    }
+  width: 355px;
+  height: 470px;
+  border-radius: 15px;
 
-    .card-body {
-        text-align: center;
-        .card-title{
-            color: $colorHapo;
-            font-family: $fontHapo;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 37px;
-            letter-spacing: -0.05em;
-        }
-        .card-text{
-            font-size: 14px;
-            width: 328px;
-            font-family: $fontHapo;
-            font-weight: 600;
-            margin: auto;
-            margin-bottom: 7px;
-        }
+  .card-img-top {
+    width: 354px;
+    height: 215px;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    .logo {
+      background-size: cover;
+      width: 226px;
+      height: 125px;
+      position: absolute;
+      left: 72px;
+      top: 42px;
     }
+  }
 
-    .btn-hapo {
-        &:hover {
-            color: #FFFF;
-        }
+  .card-body {
+    text-align: center;
+    .card-title{
+      color: $colorHapo;
+      font-family: $fontHapo;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: -0.05em;
     }
+    .card-text{
+      font-size: 14px;
+      width: 328px;
+      font-family: $fontHapo;
+      font-weight: 600;
+      margin: auto;
+      margin-bottom: 7px;
+    }
+  }
+
+  .btn-hapo {
+    &:hover {
+      color: #ffffff;
+    }
+  }
 }
 
 .row.other {
-    margin-top: 35px;
-    .card {
-      width: 355px;
-      height: 395px;
-      border-radius: 15px;
+  margin-top: 35px;
+
+  .card {
+    width: 355px;
+    height: 395px;
+    border-radius: 15px;
+  }
+
+  .card-other-img-top {
+    width: 354px;
+    height: 215px;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+
+    .logo-other {
+      background-size: cover;
+      position: absolute;
     }
-    .card-other-img-top {
-        width: 354px;
-        height: 215px;
-        position: relative;
-        border-radius: 15px 15px 0 0;
-        .logo-other {
-            background-size: cover;
-            position: absolute;
-        }
-    }    
+  }    
 }
 
 .course-two {
   .card-img-top {
     background-color: #DC594C;
+
     .logo {
-      background-image: url('../../assets/images/laravel.png');
+      background-image: url('/images/laravel.png');
       width: 189.24px;
       height: 128.95px;
     }
   }
 }
   
-  .course-one {
-    .card-img-top {
-      background-color: #3F6185;
-      .logo {
-        background-image: url('../../assets/images/html.png');
-      }
+.course-one {
+  .card-img-top {
+    background-color: #3F6185;
+
+    .logo {
+      background-image: url('/images/html.png');
+    }
   }
 }
   
-  .course-three {
-    .card-img-top {
-      background-color: #556598;
-      .logo {
-        background-image: url('../../assets/images/php.png');
-      }
+.course-three {
+  .card-img-top {
+    background-color: #556598;
+
+    .logo {
+      background-image: url('/images/php.png');
     }
+  }
 }
 
 .course-other-one {
-    .card-other-img-top {
-      background-color: #24ABE2;
-      .logo-other {
-        background-image: url('../../assets/images/CSS.png');
-        width: 198px;
-        height: 73px;
-        left: 79px;
-        top: 70px;
-      }
+  .card-other-img-top {
+    background-color: #24ABE2;
+
+    .logo-other {
+      background-image: url('/images/CSS.png');
+      width: 198px;
+      height: 73px;
+      left: 79px;
+      top: 70px;
     }
+  }
 }
 
 .course-other-two {
-    .card-other-img-top {
-      background-color: #E14E40;
-      .logo-other {
-        background-image: url('../../assets/images/CSS.png');
-        width: 198px;
-        height: 73px;
-        left: 79px;
-        top: 70px;
-      }
+  .card-other-img-top {
+    background-color: #E14E40;
+
+    .logo-other {
+      background-image: url('/images/CSS.png');
+      width: 198px;
+      height: 73px;
+      left: 79px;
+      top: 70px;
     }
+  }
 }
 
 .course-other-three {
-    .card-other-img-top {
-      background-color: #1B75BB;
-      .logo-other {
-        background-image: url('../../assets/images/java.png');
-        width: 204px;
-        height: 145px;
-        left: 88px;
-        top: 25px;
-      }
+  .card-other-img-top {
+    background-color: #1B75BB;
+
+    .logo-other {
+      background-image: url('/images/java.png');
+      width: 204px;
+      height: 145px;
+      left: 88px;
+      top: 25px;
     }
+  }
 }
 
 .other-course {
-    border-bottom: solid 7px $colorHapo;
-    width: 485px;
-    margin: auto;
-    .other-title {
-      font-family: $fontHapo;
-      font-weight: 900;
-      font-size: 80px;
-      line-height: 98px;
-      letter-spacing: -0.02em;
-      color: #11114E;
-      height: 80px;
-    }
+  border-bottom: solid 7px $colorHapo;
+  width: 485px;
+  margin: auto;
+
+  .other-title {
+    font-family: $fontHapo;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: -0.02em;
+    color: #11114E;
+    height: 80px;
+  }
 }
 
 @media (max-width: 739px) {
-    .banner-bonus {
-      z-index: 0;
-      height: 380px;
-    }
+  .banner-bonus {
+    z-index: 0;
+    height: 380px;
+  }
 
-    .banner {
-        .banner-title {
-          z-index: 1;
-        }
+  .banner {
+    .banner-title {
+      z-index: 1;
     }
+  }
 
-    .container {
-        margin-top: -90px;
-        .card {
-          width: 280px;
-          height: 406px;
-          margin: auto;
-          margin-bottom: 25px;
-          .card-img-top {
-            width: 280px;
-            height: 163px;
-          }
-        }
-    }
+  .container {
+    margin-top: -90px;
 
     .card {
-        .card-img-top {
-            .logo {
-                position: absolute;
-                left: 30px;
-                top: 20px;
-            }
-        }
-        .card-body {
-            .card-text {
-                width: 244px;
-                font-size: 14px;
-                font-family: $fontHapo;
-                margin: auto;
-            }
-        }
-        .btn-hapo {
-            margin: 10px 0 10px 0;
-        }
-    }
+      width: 280px;
+      height: 406px;
+      margin: auto;
+      margin-bottom: 25px;
 
-    .other-course {
-        margin: auto;
-        width: 260px;
-        .other-title {
-          font-size: 43px;
-          margin-top: 20px;
-          height: 60px;
-        }
-    }
-
-    .row.other {
-        .card {
-          width: 280px;
-          height: 389px;
-        }
-        .card-other-img-top {
-            height: 163px;
-        }
-    }
-
-    .course-other-one {
-      .card-other-img-top {
-          .logo-other {
-            width: 168px;
-            height: 62px;
-            left: 56px;
-            top: 48px;
-          }
+      .card-img-top {
+        width: 280px;
+        height: 163px;
       }
     }
-    
-    .course-other-two {
-        .card-other-img-top {
-          .logo-other {
-            width: 168px;
-            height: 62px;
-            left: 56px;
-            top: 48px;
-          }
-        }
-    }
+  }
 
-    .course-other-three {
-        .card-other-img-top {
-          .logo-other {
-            width: 174px;
-            height: 125px;
-            left: 60px;
-            top: 16px;
-          }
-        }
+  .card {
+    .card-img-top {
+      .logo {
+        position: absolute;
+        left: 30px;
+        top: 20px;
+      }
     }
-  
+    .card-body {
+      .card-text {
+        width: 244px;
+        font-size: 14px;
+        font-family: $fontHapo;
+        margin: auto;
+      }
+    }
+    .btn-hapo {
+            margin: 10px 0 10px 0;
+    }
+  }
+
+  .other-course {
+    margin: auto;
+    width: 260px;
+    .other-title {
+      font-size: 43px;
+      margin-top: 20px;
+      height: 60px;
+    }
+  }
+
+  .row.other {
+    .card {
+      width: 280px;
+      height: 389px;
+    }
+    .card-other-img-top {
+      height: 163px;
+    }
+  }
+
+  .course-other-one {
+    .card-other-img-top {
+      .logo-other {
+        width: 168px;
+        height: 62px;
+        left: 56px;
+        top: 48px;
+      }
+    }
+  }
+    
+  .course-other-two {
+    .card-other-img-top {
+      .logo-other {
+        width: 168px;
+        height: 62px;
+        left: 56px;
+        top: 48px;
+      }
+    }
+  }
+
+  .course-other-three {
+    .card-other-img-top {
+      .logo-other {
+        width: 174px;
+        height: 125px;
+        left: 60px;
+        top: 16px;
+      }
+    }
+  } 
 }
 
 @media (max-width: 1024px) and (min-width: 740px) {
-    .container {
-        .course-two {
-            margin: 25px 0 25px 0;
-        }
+  .container {
+    .course-two {
+      margin: 25px 0 25px 0;
     }
-    .card {
-        width: 680px;
-        height: 158.44px;
-        .card-img-top {
-            width: 240px;
-            height: 158.44px;
-            border-radius: 15px 0 0 15px;
-            .logo {
-                width: 166px;
-                height: 92.4px;
-                position: absolute;
-                left: 33px;
-                top: 38px;
-            }
-        }
-
-        .card-body {
-            text-align: start;
-            .card-title {
-                font-family: $fontHapo;
-                font-weight: 700;
-                font-size: 25px;
-                line-height: 23px;
-                margin-left: 28px;
-                font-style: normal;
-            }
-            .card-text {
-                font-size: 14px;
-                font-family: $fontHapo;
-                width: 420px;
-                margin-left: 28px;
-            }
-        }
-
-        .btn-hapo {
-            width: 136px;
-            height: 31.53px;
-            position: absolute;
-            top: 118px;
-            left: 290px;
-            font-size: 13px;
-        }
+  }
+  .card {
+    width: 680px;
+    height: 158.44px;
+    .card-img-top {
+      width: 240px;
+      height: 158.44px;
+      border-radius: 15px 0 0 15px;
+      .logo {
+        width: 166px;
+        height: 92.4px;
+        position: absolute;
+        left: 33px;
+        top: 38px;
+      }
     }
+
+    .card-body {
+      text-align: start;
+
+      .card-title {
+        font-family: $fontHapo;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 23px;
+        margin-left: 28px;
+        font-style: normal;
+      }
+
+      .card-text {
+        font-size: 14px;
+        font-family: $fontHapo;
+        width: 420px;
+        margin-left: 28px;
+      }
+    }
+
+    .btn-hapo {
+      width: 136px;
+      height: 31.53px;
+      position: absolute;
+      top: 118px;
+      left: 290px;
+      font-size: 13px;
+    }
+  }
     
-    .row.other {
-        .card {
-            width: 680px;
-            height: 158.44px;
-        }
+  .row.other {
+    .card {
+      width: 680px;
+      height: 158.44px;
+    }
         
-        .course-other-two {
-            margin: 25px 0 25px 0;
-        }
-
-        .card-other-img-top {
-            height: 158.44px;
-            border-radius: 15px 0 0 15px;
-        }
-    }
-
-    .course-other-one {
-        .card-other-img-top {
-            .logo-other {
-              width: 142px;
-              height: 52px;
-              left: 41px;
-              top: 54px;
-            }
-        }
-    }
-
     .course-other-two {
-        .card-other-img-top {
-            .logo-other {
-              width: 142px;
-              height: 52px;
-              left: 41px;
-              top: 54px;
-            }
-        }
+      margin: 25px 0 25px 0;
     }
 
-    .course-other-three {
-        .card-other-img-top {
-            .logo-other {
-              width: 156px;
-              height: 104px;
-              left: 41px;
-              top: 20px;
-            }
-        }
+    .card-other-img-top {
+      height: 158.44px;
+      border-radius: 15px 0 0 15px;
     }
+  }
+
+  .course-other-one {
+    .card-other-img-top {
+      .logo-other {
+        width: 142px;
+        height: 52px;
+        left: 41px;
+        top: 54px;
+      }
+    }
+  }
+
+  .course-other-two {
+    .card-other-img-top {
+      .logo-other {
+        width: 142px;
+        height: 52px;
+        left: 41px;
+        top: 54px;
+      }
+    }
+  }
+
+  .course-other-three {
+    .card-other-img-top {
+      .logo-other {
+        width: 156px;
+        height: 104px;
+        left: 41px;
+        top: 20px;
+      }
+    }
+  }
 }
