@@ -203,6 +203,7 @@
         top: 20px;
       }
     }
+
     .card-body {
       .card-text {
         width: 244px;
@@ -211,14 +212,16 @@
         margin: auto;
       }
     }
+
     .btn-hapo {
-            margin: 10px 0 10px 0;
+      margin: 10px 0 10px 0;
     }
   }
 
   .other-course {
     margin: auto;
     width: 260px;
+
     .other-title {
       font-size: 43px;
       margin-top: 20px;
@@ -231,6 +234,7 @@
       width: 280px;
       height: 389px;
     }
+
     .card-other-img-top {
       height: 163px;
     }
@@ -276,13 +280,16 @@
       margin: 25px 0 25px 0;
     }
   }
+  
   .card {
     width: 680px;
     height: 158.44px;
+
     .card-img-top {
       width: 240px;
       height: 158.44px;
       border-radius: 15px 0 0 15px;
+
       .logo {
         width: 166px;
         height: 92.4px;
