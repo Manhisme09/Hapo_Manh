@@ -4,18 +4,8 @@
 
 <section>
     <div class="banner" style="background-image: url('{{ asset('images/banner.png') }}');">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div class="banner-title">
-            <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img
-=======
-        <div class="banner_title">
-            <p class="banner_title_first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img
->>>>>>> 5b9229d (#5 make why Hapolearn)
-=======
         <div class="banner-title">
             <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img class="owl"
->>>>>>> bd361de (#5 fix bug and convention)
                             src="{{ asset('images/owl.png') }}" alt=""></span>!</span>
             </p>
             <p class="banner-title-second">Interactive lessons, "on-the-go" <br> practice, peer support.</p>
