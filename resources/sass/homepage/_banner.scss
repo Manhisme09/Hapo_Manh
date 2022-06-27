@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 $purple: #11114E;
+=======
+>>>>>>> bd361de (#5 fix bug and convention)
 .banner-title {
   position: absolute;
   height: 100%;
@@ -7,15 +10,20 @@ $purple: #11114E;
 }
 
 .banner-title-first {
+<<<<<<< HEAD
   font-family: 'UTM BryantLG';
+=======
+  font-family: $fontHapo;
+>>>>>>> bd361de (#5 fix bug and convention)
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 61px;
   letter-spacing: -0.05em;
   color: $purple;
+
   span {
-    font-family: 'UTM BryantLG';
+    font-family: $fontHapo;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -32,11 +40,15 @@ $purple: #11114E;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
   cursor: pointer;
+<<<<<<< HEAD
+=======
+
+>>>>>>> bd361de (#5 fix bug and convention)
   .btn-start-title {
     position: absolute;
     top: 13px;
     left: 50px;
-    font-family: 'UTM BryantLG';
+    font-family: $fontHapo;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -52,14 +64,14 @@ $purple: #11114E;
   position: relative;
 }
 
-.banner_bonus {
+.banner-bonus {
   background-image: linear-gradient(to bottom ,#f9f8f8fb,#E5E5E5);
   height: 150px;
   box-shadow: 0px 0px 10px rgba(190, 188, 188, 0.25);
   position: relative;
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 1024px) and (min-width: 740px) {
   .banner {
     max-height: 45vw;
   }
@@ -72,12 +84,13 @@ $purple: #11114E;
   .banner-title-first {
     font-size: 3.9vw;
     margin-bottom: 0;
+
     span {
       font-size: 4.2vw;
     }
-    img {
+
+    .owl {
       max-width: 5vw;
- 
     }
   }
 
@@ -89,15 +102,19 @@ $purple: #11114E;
   .btn-start {
     max-width: 25vw;
     max-height: 4vw;
+<<<<<<< HEAD
+=======
+
+>>>>>>> bd361de (#5 fix bug and convention)
     .btn-start-title {
       font-size: 2vw;
       left: 4vw;
-      top: 0vw;
+      top: -0.5vw;
     }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 739px) {
   .banner {
     max-height: 45vw;
   }

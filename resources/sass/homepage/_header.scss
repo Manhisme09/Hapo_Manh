@@ -11,6 +11,7 @@
 .navbar-nav{
   .nav-item {
     margin-right: 20px;
+    
     &:hover { 
       background: $colorHapo;
       border-radius: 17px;
@@ -49,12 +50,17 @@
 
   .navbar-light {
 <<<<<<< HEAD
+<<<<<<< HEAD
     .navbar-nav {
       .nav-link:hover {
         color: #B2D235;
 =======
     & .navbar-nav {
       & .nav-link:hover {
+=======
+    .navbar-nav {
+      .nav-link:hover {
+>>>>>>> bd361de (#5 fix bug and convention)
         color: $colorHapo;
 >>>>>>> 5b9229d (#5 make why Hapolearn)
       }
@@ -75,12 +81,17 @@
 
   .navbar-light {
 <<<<<<< HEAD
+<<<<<<< HEAD
     .navbar-nav {
       .nav-link:hover {
         color: #B2D235;
 =======
     & .navbar-nav {
       & .nav-link:hover {
+=======
+    .navbar-nav {
+      .nav-link:hover {
+>>>>>>> bd361de (#5 fix bug and convention)
         color: $colorHapo;
 >>>>>>> 5b9229d (#5 make why Hapolearn)
       }

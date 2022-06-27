@@ -29,7 +29,7 @@
         text-align: center;
         .card-title{
             color: $colorHapo;
-            font-family: 'UTM BryantLG';
+            font-family: $fontHapo;
             font-style: normal;
             font-weight: 700;
             font-size: 30px;
@@ -39,7 +39,7 @@
         .card-text{
             font-size: 14px;
             width: 328px;
-            font-family: 'UTM BryantLG';
+            font-family: $fontHapo;
             font-weight: 600;
             margin: auto;
             margin-bottom: 7px;
@@ -145,7 +145,7 @@
     width: 485px;
     margin: auto;
     .other-title {
-      font-family: 'UTM BryantLG';
+      font-family: $fontHapo;
       font-weight: 900;
       font-size: 80px;
       line-height: 98px;
@@ -156,13 +156,13 @@
 }
 
 @media (max-width: 739px) {
-    .banner_bonus {
+    .banner-bonus {
       z-index: 0;
       height: 380px;
     }
 
     .banner {
-        .banner_title {
+        .banner-title {
           z-index: 1;
         }
     }
@@ -193,7 +193,7 @@
             .card-text {
                 width: 244px;
                 font-size: 14px;
-                font-family: 'UTM BryantLG';
+                font-family: $fontHapo;
                 margin: auto;
             }
         }
@@ -282,7 +282,7 @@
         .card-body {
             text-align: start;
             .card-title {
-                font-family: 'UTM BryantLG';
+                font-family: $fontHapo;
                 font-weight: 700;
                 font-size: 25px;
                 line-height: 23px;
@@ -291,7 +291,7 @@
             }
             .card-text {
                 font-size: 14px;
-                font-family: 'UTM BryantLG';
+                font-family: $fontHapo;
                 width: 420px;
                 margin-left: 28px;
             }
