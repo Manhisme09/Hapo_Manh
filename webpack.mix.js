@@ -5,7 +5,4 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .copy('resources/assets/images', 'public/images')
     .copy('resources/assets/fonts', 'public/fonts')
-    .copy(
-        'node_modules/@fortawesome/fontawesome-free/webfonts',
-        'public/webfonts'
-    );
+    .copy('node_modules/@fortawesome/fontawesome-free/webfonts','public/webfonts');
