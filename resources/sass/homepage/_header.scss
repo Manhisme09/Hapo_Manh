@@ -8,12 +8,8 @@
   min-height: 54vh;
 }
 
-@media (max-width: 992px) {
-	// TODO
-}
-
 .navbar-nav{
-  & .nav-item {
+  .nav-item {
     margin-right: 20px;
     &:hover { 
       background: #B2D235;
@@ -23,16 +19,63 @@
 }
 
 .navbar-light {
-  & .navbar-nav {
-    & .nav-link {
+  .navbar-nav {
+    .nav-link {
       color: #505353;
       font-weight: 700;
     }
   }
-  & .navbar-nav {
-    & .nav-link:hover {
+  .navbar-nav {
+    .nav-link:hover {
       color: #FFFFFF;
     }
   }
 }
 
+@media (max-width: 993px) and (min-width: 480px) {
+  .navbar-nav{
+    .nav-item {
+      border-bottom: 1px solid #F1F1F1;
+      &:hover { 
+        background: #f8f9fa;
+        border-radius: 0%;
+      }
+    }
+  }
+
+  .navbar-brand .logo-image {
+    max-height: 5vw;
+  }
+
+  .navbar-light {
+    .navbar-nav {
+      .nav-link:hover {
+        color: #B2D235;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav{
+    .nav-item {
+      border-bottom: 1px solid #F1F1F1;
+      &:hover { 
+        background: #f8f9fa;
+        border-radius: 0%;
+      }
+    }
+  }
+
+  .navbar-light {
+    .navbar-nav {
+      .nav-link:hover {
+        color: #B2D235;
+      }
+    }
+  }
+
+  .navbar-brand .logo-image {
+    max-height: 9vw;
+  }
+}
