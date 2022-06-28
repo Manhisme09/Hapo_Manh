@@ -4,6 +4,7 @@
   width: 366px;
   font-size: 28px;
   font-weight: 700;
+
   a {
     text-decoration: none;
     color: #90AB26;
@@ -22,6 +23,7 @@
 .why-img {
   width: 772px;
 }
+
 .why-content {
   font-family: $fontHapo;
   font-style: normal;
@@ -55,7 +57,8 @@
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.05em;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
+
     .why-text {
       margin-left: 20px;
     }
@@ -78,6 +81,7 @@
     width: 393px;
     position: absolute;
     top: 226px;
+
     .why-item {
       font-size: 17px;
       margin-bottom: 15px;
@@ -126,6 +130,7 @@
     width: 378px;
     position: absolute;
     left: 15px;
+    
     .why-item {
       font-size: 15px;
       line-height: 14px;
