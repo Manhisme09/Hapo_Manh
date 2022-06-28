@@ -30,7 +30,7 @@
     text-align: center;
     
     .card-title{
-      color: $colorHapo;
+      color: $greenHapo;
       font-family: $fontHapo;
       font-style: normal;
       font-weight: 700;
@@ -50,7 +50,7 @@
 
   .btn-hapo {
     &:hover {
-      color: #FFFFFF;
+      color: white;
     }
   }
 }
@@ -152,7 +152,7 @@
 }
 
 .other-course {
-  border-bottom: solid 7px $colorHapo;
+  border-bottom: solid 7px $greenHapo;
   width: 485px;
   margin: auto;
 

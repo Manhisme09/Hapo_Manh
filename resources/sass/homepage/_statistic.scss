@@ -10,7 +10,7 @@
     font-size: 60px;
     line-height: 74px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: white;
     width: 800px;
     margin: auto;
     text-align: center;
@@ -50,7 +50,7 @@
     line-height: 98px;
     letter-spacing: -0.02em;
     color: #11114E; 
-    border-bottom: 5px solid #B2D235;
+    border-bottom: 5px solid $greenHapo;
     width: 279px;
     margin: auto;
   }
@@ -71,7 +71,7 @@
     font-size: 60px;
     line-height: 74px;
     letter-spacing: -0.05em;
-    color: #B2D235;
+    color: $greenHapo;
   }
 }
 

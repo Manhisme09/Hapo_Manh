@@ -366,7 +366,6 @@
                     <p class="statistic-quantity">16,882</p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
