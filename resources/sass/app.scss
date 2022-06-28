@@ -6,6 +6,9 @@
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
@@ -17,3 +20,6 @@
 @import 'homepage/banner';
 @import 'homepage/course';
 @import 'homepage/whybanner';
+@import 'homepage/statistic';
+@import 'homepage/feedback';
+

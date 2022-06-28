@@ -165,5 +165,209 @@
             </div>
         </div>
     </div>
+    <div class="feedback">
+        <p class="feedback-title">Feedback</p>
+    </div>
+    <div class="feedback-describe">
+        What other students turned professionals have to say about us after learning with us and reaching their goals
+    </div>
+</section>
+
+<section class="container">
+    <div class="feedback-slider">
+        <div class="feedback-item">
+            <div class="feedback-content">
+                <div class="title">
+                    <p>
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        good
+                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback-user">
+                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
+                <div class="infor">
+                    <p class="name">Nguyen Duc Manh</p>
+                    <p class="language">PHP</p>
+                    <div class="evaluate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <div class="feedback-content">
+                <div class="title">
+                    <p>
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        good
+                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback-user">
+                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
+                <div class="infor">
+                    <p class="name">Nguyen Duc Manh</p>
+                    <p class="language">PHP</p>
+                    <div class="evaluate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <div class="feedback-content">
+                <div class="title">
+                    <p>
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        good
+                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback-user">
+                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
+                <div class="infor">
+                    <p class="name">Nguyen Duc Manh</p>
+                    <p class="language">PHP</p>
+                    <div class="evaluate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <div class="feedback-content">
+                <div class="title">
+                    <p>
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        good
+                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback-user">
+                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
+                <div class="infor">
+                    <p class="name">Nguyen Duc Manh</p>
+                    <p class="language">PHP</p>
+                    <div class="evaluate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <div class="feedback-content">
+                <div class="title">
+                    <p>
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        good
+                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback-user">
+                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
+                <div class="infor">
+                    <p class="name">Nguyen Duc Manh</p>
+                    <p class="language">PHP</p>
+                    <div class="evaluate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <div class="feedback-content">
+                <div class="title">
+                    <p>
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        good
+                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback-user">
+                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
+                <div class="infor">
+                    <p class="name">Nguyen Duc Manh</p>
+                    <p class="language">PHP</p>
+                    <div class="evaluate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="become-member">
+        <div class="sologal">
+            Become a member of our
+            growing community!
+        </div>
+        <div class="start">
+            <p>Start Learning Now!</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row statistic">
+        <div class="topic col-lg-12">
+            <p>Statistic</p>
+        </div>
+        <div class="statistic-content col-lg-12">
+            <div class="row">
+                <div class="statistic-item col-lg-4 col-md-4">
+                    <p class="statistic-name">Courses</p>
+                    <p class="statistic-quantity">1,586</p>
+                </div>
+                <div class="statistic-item col-lg-4 col-md-4">
+                    <p class="statistic-name">Lessons</p>
+                    <p class="statistic-quantity">2,689</p>
+                </div>
+                <div class="statistic-item col-lg-4 col-md-4">
+                    <p class="statistic-name">Learners</p>
+                    <p class="statistic-quantity">16,882</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
 @endsection
