@@ -56,24 +56,27 @@
   }
 }
   
-.statistic-content .statistic-item {
-  .statistic-name {
-    font-family: $fontHapo;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 74px;
-    letter-spacing: -0.05em;
-    color: #505353;
+.statistic-content {
+  .statistic-item {
+    .statistic-name {
+      font-family: $fontHapo;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 74px;
+      letter-spacing: -0.05em;
+      color: #505353;
+    }
+
+    .statistic-quantity {
+      font-family: $fontHapo;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 74px;
+      letter-spacing: -0.05em;
+      color: $greenHapo;
+    }
   }
-  .statistic-quantity {
-    font-family: $fontHapo;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 74px;
-    letter-spacing: -0.05em;
-    color: $greenHapo;
-  }
-}
+}  
 
 @media (max-width: 1024px) and (min-width: 740px) {
   .become-member {
