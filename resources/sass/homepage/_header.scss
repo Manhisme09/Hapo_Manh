@@ -13,7 +13,7 @@
     margin-right: 20px;
     
     &:hover { 
-      background: $colorHapo;
+      background: $greenHapo;
       border-radius: 17px;
     }
   }
@@ -28,7 +28,7 @@
   }
   .navbar-nav {
     .nav-link:hover {
-      color: #FFFFFF;
+      color: white;
     }
   }
 }
@@ -51,7 +51,7 @@
   .navbar-light {
     .navbar-nav {
       .nav-link:hover {
-        color: $colorHapo;
+        color: $greenHapo;
       }
     }
   }
@@ -71,7 +71,7 @@
   .navbar-light {
     .navbar-nav {
       .nav-link:hover {
-        color: $colorHapo;
+        color: $greenHapo;
       }
     }
   }
