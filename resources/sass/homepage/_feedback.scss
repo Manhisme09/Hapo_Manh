@@ -34,7 +34,7 @@
   }
 
   .feedback-item {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
   }
 }
   
@@ -54,6 +54,7 @@
     width: 501px;
     height: 113px;
     left: 14px;
+
     p {
       font-family: $fontHapo;
       font-weight: 650;
@@ -99,7 +100,7 @@
   
 .slick-slider {
   .slick-prev,
-    .slick-next {
+  .slick-next {
     position: absolute;
     top: 25%;
     transform: translateY(-25%);
@@ -123,12 +124,13 @@
       right: -16px;
     }
 
-    .slick-prev::before, .slick-next::before {
+    .slick-prev::before, 
+    .slick-next::before {
       content: "";
     }
 }  
   
-@media  (min-width: 740px) and  (max-width: 1024px) {
+@media (min-width: 740px) and (max-width: 1024px) {
   .feedback {
     margin-top: 590px;
   }
@@ -157,7 +159,7 @@
   }  
 }
   
-@media  (max-width: 739px) {
+@media (max-width: 739px) {
   .feedback {
     margin-top: 65px;
   }

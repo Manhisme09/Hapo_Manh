@@ -262,7 +262,6 @@
                         Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
                     </p>
                 </div>
-
             </div>
             <div class="feedback-user">
                 <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
@@ -288,7 +287,6 @@
                         Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
                     </p>
                 </div>
-
             </div>
             <div class="feedback-user">
                 <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
@@ -314,7 +312,6 @@
                         Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
                     </p>
                 </div>
-
             </div>
             <div class="feedback-user">
                 <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
