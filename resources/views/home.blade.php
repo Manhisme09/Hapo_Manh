@@ -3,8 +3,8 @@
 @section('content')
 
 <section>
-    <div class="banner">
-        <div class="banner-title">
+    <div class="banner col-md-12">
+        <div class="banner-title col-md-12">
             <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img class="owl"
                             src="{{ asset('images/owl.png') }}" alt=""></span>!</span>
             </p>
@@ -14,17 +14,7 @@
             </div>
         </div>
     </div>
-    <div class="banner-bonus">
-        <div class="banner-title-mobile">
-            <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img class="owl"
-                            src="{{ asset('images/owl.png') }}" alt=""></span>!</span>
-            </p>
-            <p class="banner-title-second">Interactive lessons, "on-the-go" <br> practice, peer support.</p>
-            <div class="btn-start">
-                <p class="btn-start-title">Start Learning Now!</p>
-            </div>
-        </div>
-    </div>
+    <div class="banner-bonus"></div>
 </section>
 
 <section class="container">
