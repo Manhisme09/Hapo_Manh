@@ -3,8 +3,8 @@
 @section('content')
 
 <section>
-    <div class="banner" style="background-image: url('{{ asset('images/banner.png') }}');">
-        <div class="banner-title">
+    <div class="banner col-md-12">
+        <div class="banner-title col-md-12">
             <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img class="owl"
                             src="{{ asset('images/owl.png') }}" alt=""></span>!</span>
             </p>
