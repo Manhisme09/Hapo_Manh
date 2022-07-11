@@ -24,8 +24,6 @@ class AlterUsersTable extends Migration
             $table->string('username')->nullable();
             $table->string('password')->nullable()->change();
             $table->smallInteger('role')->nullable();
-            $table->dropColumn('email_verified_at');
-            $table->dropColumn('remember_token');
             $table->softDeletes();
         });
     }
@@ -38,7 +36,6 @@ class AlterUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->renameColumn('user_name', 'name');
             $table->dropColumn('image');
             $table->dropColumn('role');
             $table->dropColumn('birthdate');
