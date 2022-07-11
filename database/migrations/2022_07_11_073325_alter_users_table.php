@@ -14,7 +14,6 @@ class AlterUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->renameColumn('name', 'user_name');
             $table->string('image', 50)->nullable();
             $table->string('email', 100)->nullable()->change();
             $table->date('birthdate')->nullable();
