@@ -14,11 +14,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $resuilt = Lesson::find(1)->course->toArray();
-        echo '<pre>';
-        print_r($resuilt);
-        echo '</pre>';
-        dd();
-        //return view('home');
+        return view('home');
     }
 }
