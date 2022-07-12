@@ -18,7 +18,7 @@ class CreateLessonsTable extends Migration
             $table->string('lesson_name', 100)->nullable();
             $table->string('requirements', 50)->nullable();
             $table->text('description')->nullable();
-            $table->integer('course_id')->nullable();
+            $table->integer('course_id');
             $table->timestamps();
             $table->softDeletes();
         });
