@@ -18,7 +18,7 @@ class CreateReviewsTable extends Migration
             $table->text('content')->nullable();
             $table->smallInteger('star')->nullable();
             $table->date('posted_at')->nullable();
-            $table->integer('lesson_id')->nullable();
+            $table->integer('course_id')->nullable();
             $table->integer('user_id')->nullable();
             $table->timestamps();
             $table->softDeletes();

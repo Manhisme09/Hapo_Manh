@@ -10,6 +10,7 @@ class Course extends Model
 {
     use HasFactory;
     use SoftDeletes;
+
     protected $fillable = [
         'course_name',
         'image',
@@ -17,20 +18,23 @@ class Course extends Model
         'time',
         'price',
     ];
-    public function lesson()
+
+    public function lessons()
     {
         return $this->hasMany(Lesson::class);
     }
 
-    public function user()
+    public function users()
     {
         return $this->belongsToMany(User::class);
     }
-    public function review()
+
+    public function reviews()
     {
         return $this->hasMany(Review::class);
     }
-    public function tag()
+
+    public function tags()
     {
         return $this->belongsToMany(Tag::class);
     }

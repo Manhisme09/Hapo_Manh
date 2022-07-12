@@ -10,10 +10,12 @@ class LessonUser extends Model
 {
     use HasFactory;
     use SoftDeletes;
+
     protected $primaryKey = [
         'user_id',
         'lesson_id'
     ];
+
     protected $fillable = [
         'lesson_id',
         'user_id',

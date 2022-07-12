@@ -31,16 +31,17 @@ class User extends Authenticatable
         'role',
     ];
 
-    public function course()
+    public function courses()
     {
         return $this->belongsToMany(Course::class);
     }
 
-    public function lesson()
+    public function lessons()
     {
         return $this->belongsToMany(Lesson::class);
     }
-    public function review()
+
+    public function reviews()
     {
         return $this->hasMany(Review::class);
     }

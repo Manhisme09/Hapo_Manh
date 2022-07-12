@@ -10,6 +10,7 @@ class Review extends Model
 {
     use HasFactory;
     use SoftDeletes;
+
     protected $fillable = [
         'content',
         'star',
@@ -17,10 +18,12 @@ class Review extends Model
         'lesson_id',
         'user_id',
     ];
+
     public function user()
     {
         return $this->belongsTo(User::class);
     }
+
     public function course()
     {
         return $this->belongsTo(Course::class);

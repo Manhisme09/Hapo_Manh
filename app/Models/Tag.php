@@ -10,10 +10,12 @@ class Tag extends Model
 {
     use HasFactory;
     use SoftDeletes;
+
     protected $fillable = [
         'tag_name',
     ];
-    public function course()
+
+    public function courses()
     {
         return $this->belongsToMany(Course::class);
     }

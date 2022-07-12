@@ -18,7 +18,7 @@ class AlterUsersTable extends Migration
             $table->string('image', 50)->nullable();
             $table->string('email', 100)->nullable()->change();
             $table->date('birthdate')->nullable();
-            $table->integer('phone')->nullable();
+            $table->string('phone')->nullable();
             $table->string('address', 100)->nullable();
             $table->text('about_me')->nullable();
             $table->string('username')->nullable();
