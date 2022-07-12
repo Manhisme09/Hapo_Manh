@@ -15,10 +15,10 @@ class LessonFactory extends Factory
     public function definition()
     {
         return [
-            "lesson_name" => $this->faker->name(),
-            "requirements" => $this->faker->name(),
-            "description" => $this->faker->text(),
-            "course_id" => $this->faker->randomElement(Course::pluck('id')),
+            'lesson_name' => $this->faker->name(),
+            'requirements' => $this->faker->name(),
+            'description' => $this->faker->text(),
+            'course_id' => $this->faker->randomElement(Course::pluck('id')),
         ];
     }
 }

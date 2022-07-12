@@ -14,11 +14,11 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
-            "course_name" => $this->faker->name(),
+            'course_name' => $this->faker->name(),
             'image' => 'https://source.unsplash.com/random',
-            "description" => $this->faker->text(),
-            "time" => rand(50, 90),
-            "price" => rand(1000000, 9000000),
+            'description' => $this->faker->text(),
+            'time' => rand(50, 90),
+            'price' => rand(1000000, 9000000),
         ];
     }
 }

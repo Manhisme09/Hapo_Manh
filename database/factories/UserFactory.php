@@ -31,7 +31,7 @@ class UserFactory extends Factory
             'address' => $this->faker->name(),
             'about_me' => $this->faker->text(),
             'username' => $this->faker->text(15),
-            "role" => rand(0, 1),
+            'role' => rand(0, 1),
             'remember_token' => Str::random(10),
         ];
     }
