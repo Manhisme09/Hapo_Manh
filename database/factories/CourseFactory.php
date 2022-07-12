@@ -15,7 +15,7 @@ class CourseFactory extends Factory
     {
         return [
             "course_name" => $this->faker->name(),
-            'image' => $this->faker->image('public/images', 640, 480, null, false),
+            'image' => 'https://source.unsplash.com/random',
             "description" => $this->faker->text(),
             "time" => rand(50, 90),
             "price" => rand(1000000, 9000000),
