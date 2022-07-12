@@ -37,13 +37,18 @@ class AlterUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->string('name');
+            $table->string('email')->unique();
             $table->dropColumn('image');
             $table->dropColumn('birthdate');
             $table->dropColumn('phone');
             $table->dropColumn('address');
             $table->dropColumn('about_me');
             $table->dropColumn('username');
+            $table->string('password');
             $table->dropColumn('role');
+            $table->timestamp('email_verified_at')->nullable();
+            $table->dropSoftDeletes();
         });
     }
 }
