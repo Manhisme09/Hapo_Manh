@@ -15,7 +15,7 @@
     height: 80px;
   }
 }
-  
+
 .feedback-describe {
   width: 705px;
   font-family: $fontHapo;
@@ -24,10 +24,10 @@
   line-height: 31px;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #505353; 
+  color: #505353;
   margin: auto;
 }
-  
+
 .container {
   .feedback-slider {
     margin-top: 400px;
@@ -37,7 +37,7 @@
     margin: 0 20px;
   }
 }
-  
+
 .feedback-content {
   width: 525px;
   height: 152.47px;
@@ -65,7 +65,7 @@
     }
   }
 }
-    
+
 .feedback-user {
   display: flex;
   width: 510px;
@@ -97,7 +97,7 @@
     }
   }
 }
-  
+
 .slick-slider {
   .slick-prev,
   .slick-next {
@@ -115,7 +115,7 @@
     font-size: 20px;
     color: #969494 !important;
     }
-  
+
     .slick-prev {
       left: 0;
     }
@@ -124,21 +124,21 @@
       right: -16px;
     }
 
-    .slick-prev::before, 
+    .slick-prev::before,
     .slick-next::before {
       content: "";
     }
-}  
-  
+}
+
 @media (min-width: 740px) and (max-width: 1024px) {
   .feedback {
     margin-top: 590px;
   }
-  
+
   .feedback-user {
     width: 537px;
   }
-  
+
   .feedback-content {
     width: 564px;
     margin: auto;
@@ -147,28 +147,28 @@
         width: 578px;
     }
   }
-  
-  .slick-slider { 
+
+  .slick-slider {
     .slick-prev {
       left: 62px;
     }
 
     .slick-next {
       right: 20px;
-    }   
-  }  
+    }
+  }
 }
-  
+
 @media (max-width: 739px) {
   .feedback {
     margin-top: 65px;
   }
-  
+
   .feedback-describe {
     width: 325px;
     font-size: 16px;
   }
-  
+
   .feedback-content {
     width: 334px;
     height: 127.16px;

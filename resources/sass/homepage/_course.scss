@@ -1,12 +1,12 @@
-.container {
+.courses {
   margin-top: -100px;
 }
 
-.row {
+.row.courses {
   margin-bottom: 65px;
 }
 
-.card {
+.card.item {
   width: 355px;
   height: 470px;
   border-radius: 15px;
@@ -28,7 +28,7 @@
 
   .card-body {
     text-align: center;
-    
+
     .card-title {
       color: $greenHapo;
       font-family: $fontHapo;
@@ -58,7 +58,7 @@
 .row.other {
   margin-top: 35px;
 
-  .card {
+  .card.item {
     width: 355px;
     height: 395px;
     border-radius: 15px;
@@ -74,47 +74,47 @@
       background-size: cover;
       position: absolute;
     }
-  }    
+  }
 }
 
 .course-two {
   .card-img-top {
-    background-color: #DC594C;
+    background-color: #dc594c;
 
     .logo {
-      background-image: url('/images/laravel.png');
+      background-image: url("/images/laravel.png");
       width: 189.24px;
       height: 128.95px;
     }
   }
 }
-  
+
 .course-one {
   .card-img-top {
-    background-color: #3F6185;
+    background-color: #3f6185;
 
     .logo {
-      background-image: url('/images/html.png');
+      background-image: url("/images/html.png");
     }
   }
 }
-  
+
 .course-three {
   .card-img-top {
     background-color: #556598;
 
     .logo {
-      background-image: url('/images/php.png');
+      background-image: url("/images/php.png");
     }
   }
 }
 
 .course-other-one {
   .card-other-img-top {
-    background-color: #24ABE2;
+    background-color: #24abe2;
 
     .logo-other {
-      background-image: url('/images/CSS.png');
+      background-image: url("/images/CSS.png");
       width: 198px;
       height: 73px;
       left: 79px;
@@ -125,10 +125,10 @@
 
 .course-other-two {
   .card-other-img-top {
-    background-color: #E14E40;
+    background-color: #e14e40;
 
     .logo-other {
-      background-image: url('/images/CSS.png');
+      background-image: url("/images/CSS.png");
       width: 198px;
       height: 73px;
       left: 79px;
@@ -139,10 +139,10 @@
 
 .course-other-three {
   .card-other-img-top {
-    background-color: #1B75BB;
+    background-color: #1b75bb;
 
     .logo-other {
-      background-image: url('/images/java.png');
+      background-image: url("/images/java.png");
       width: 204px;
       height: 145px;
       left: 88px;
@@ -162,7 +162,7 @@
     font-size: 80px;
     line-height: 98px;
     letter-spacing: -0.02em;
-    color: #11114E;
+    color: #11114e;
     height: 80px;
   }
 }
@@ -182,7 +182,7 @@
   .container {
     margin-top: -90px;
 
-    .card {
+    .card.item {
       width: 280px;
       height: 406px;
       margin: auto;
@@ -195,7 +195,7 @@
     }
   }
 
-  .card {
+  .card.item {
     .card-img-top {
       .logo {
         position: absolute;
@@ -230,7 +230,7 @@
   }
 
   .row.other {
-    .card {
+    .card.item {
       width: 280px;
       height: 389px;
     }
@@ -250,7 +250,7 @@
       }
     }
   }
-    
+
   .course-other-two {
     .card-other-img-top {
       .logo-other {
@@ -271,7 +271,7 @@
         top: 16px;
       }
     }
-  } 
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 740px) {
@@ -280,8 +280,8 @@
       margin: 25px 0 25px 0;
     }
   }
-  
-  .card {
+
+  .card.item {
     width: 680px;
     height: 158.44px;
 
@@ -328,13 +328,13 @@
       font-size: 13px;
     }
   }
-    
+
   .row.other {
-    .card {
+    .card.item {
       width: 680px;
       height: 158.44px;
     }
-        
+
     .course-other-two {
       margin: 25px 0 25px 0;
     }
