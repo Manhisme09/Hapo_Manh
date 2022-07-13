@@ -19,7 +19,7 @@
   height: 633px;
   margin-top: 50px;
 }
-  
+
 .why-img {
   width: 772px;
 }
@@ -29,7 +29,7 @@
   font-style: normal;
   color: white;
 }
-  
+
 .why-title {
   font-weight: 700;
   font-size: 62px;
@@ -40,18 +40,18 @@
   left: 100px;
   top: -87px;
 }
-  
+
 .rotate-laptop {
   display: none;
 }
-  
+
 .why-list {
   margin-top: 20px;
   position: absolute;
   top: -3px;
   left: 85px;
   width: 495px;
-  
+
   .why-item {
     font-weight: 400;
     font-size: 20px;
@@ -64,18 +64,18 @@
     }
   }
 }
-  
+
 @media  (min-width: 740px) and  (max-width: 1024px) {
   .why-title {
     font-size: 60px;
     transform: translateX(180px);
     margin: 186px 0 0 -113px;
   }
-  
+
   .rotate-laptop {
     display: none;
   }
-  
+
   .why-list {
     left: 45px;
     width: 393px;
@@ -85,13 +85,13 @@
     .why-item {
       font-size: 17px;
       margin-bottom: 15px;
-  
+
       .why-text {
         margin-left: 10px;
       }
     }
   }
-  
+
   .why-img {
     width: 327px;
     height: 260px;
@@ -100,7 +100,7 @@
     margin-top: 176px;
   }
 }
-  
+
 @media  (max-width: 739px) {
   .why-title {
     font-size: 46px;
@@ -114,7 +114,7 @@
     left: -7px;
     font-family: $fontHapo;
   }
-  
+
   .rotate-laptop {
     display: block;
     position: absolute;
@@ -124,7 +124,7 @@
     left: 9px;
     transform: rotate(7.15deg);
   }
-  
+
   .why-list {
     margin-top: 183px;
     width: 378px;
@@ -136,7 +136,7 @@
       line-height: 14px;
     }
   }
-  
+
   .why-img {
     width: 360px;
     height: 218px;

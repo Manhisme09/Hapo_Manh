@@ -17,10 +17,10 @@
     <div class="banner-bonus"></div>
 </section>
 
-<section class="container">
-    <div class="row">
+<section class="container courses">
+    <div class="row courses">
         <div class="course-one col-lg-4">
-            <div class="card">
+            <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
                         <div class="logo"></div>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="course-two col-lg-4">
-            <div class="card">
+            <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
                         <div class="logo"></div>
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="course-three col-lg-4">
-            <div class="card">
+            <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
                         <div class="logo"></div>
@@ -72,9 +72,9 @@
     <div class="other-course">
         <p class="other-title">Other courses</p>
     </div>
-    <div class="row other">
+    <div class="row courses other">
         <div class="course-other-one col-lg-4">
-            <div class="card">
+            <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-other-img-top col-lg-12 col-md-4">
                         <div class="logo-other"></div>
@@ -89,7 +89,7 @@
             </div>
         </div>
         <div class="course-other-two col-lg-4">
-            <div class="card">
+            <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-other-img-top col-lg-12 col-md-4">
                         <div class="logo-other"></div>
@@ -104,7 +104,7 @@
             </div>
         </div>
         <div class="course-other-three col-lg-4">
-            <div class="card">
+            <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-other-img-top col-lg-12 col-md-4">
                         <div class="logo-other"></div>
