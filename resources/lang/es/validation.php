@@ -13,7 +13,6 @@ return [
     |
     */
 
-    'wrong_login' => '¡Nombre de usuario o contraseña incorrecta!',
     'required' => 'El campo :attribute es obligatorio.',
     'max' => [
         'string' => 'El :attribute no debe tener más de :max caracteres.',
