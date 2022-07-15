@@ -6,9 +6,9 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header login-title">{{ __('Sign in to HapoLearn') }}</div>
-                @if (session('status'))
+                @if (session('error'))
                 <div class="alert alert-danger text-center">
-                    {{ session('status') }}
+                    {{ session('error') }}
                 </div>
                 @endif
                 <div class="card-body">

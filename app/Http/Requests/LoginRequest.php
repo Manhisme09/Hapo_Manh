@@ -38,8 +38,8 @@ class LoginRequest extends FormRequest
     public function messages()
     {
         return [
-            'required' => ':attribute bắt buộc phải điền',
-            'max' => ':attribute không được lớn hơn :max ký tự',
+            'required' => __('validation.required'),
+            'max' => __('validation.max'),
         ];
     }
 }
