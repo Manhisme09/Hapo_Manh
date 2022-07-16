@@ -42,13 +42,13 @@
   width: 525px;
   height: 152.47px;
   background-color: white;
-  border: 0.5px solid #E2E2E2;
+  border: 0.5px solid #e2e2e2;
   border-radius: 10px;
   position: relative;
   box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.5);
 
   .title {
-    border-left: 5px solid #D9DADC;
+    border-left: 5px solid #d9dadc;
     position: absolute;
     top: 26px;
     width: 501px;
@@ -77,7 +77,7 @@
     margin-left: 10px;
 
     .evaluate {
-      color: #F2C54F;
+      color: #f2c54f;
       font-size: 14px;
       margin-top: -8px;
     }
@@ -86,7 +86,7 @@
       font-family: $fontHapo;
       font-weight: 700;
       font-size: 20px;
-      color: #11114E;
+      color: #11114e;
     }
 
     .language {
@@ -106,7 +106,7 @@
     transform: translateY(-25%);
     background-color: white !important;
     border-radius: 50%;
-    border: 0.5px solid #C4C4C4;
+    border: 0.5px solid #c4c4c4;
     z-index: 2;
     padding: 15px;
     display: flex;
@@ -114,25 +114,25 @@
     align-items: center;
     font-size: 20px;
     color: #969494 !important;
-    }
+  }
 
-    .slick-prev {
-      left: 0;
-    }
+  .slick-prev {
+    left: 0;
+  }
 
-    .slick-next {
-      right: -16px;
-    }
+  .slick-next {
+    right: -16px;
+  }
 
-    .slick-prev::before,
-    .slick-next::before {
-      content: "";
-    }
+  .slick-prev::before,
+  .slick-next::before {
+    content: "";
+  }
 }
 
 @media (min-width: 740px) and (max-width: 1024px) {
   .feedback {
-    margin-top: 590px;
+    margin-top: 650px;
   }
 
   .feedback-user {
@@ -144,7 +144,7 @@
     margin: auto;
 
     .title {
-        width: 578px;
+      width: 578px;
     }
   }
 

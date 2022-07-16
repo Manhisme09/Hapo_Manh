@@ -7,17 +7,17 @@
 
   a {
     text-decoration: none;
-    color: #90AB26;
+    color: #90ab26;
   }
 }
 
 .why-bg {
-  background-image: url('/images/whybanner.png');
+  background-image: url("/images/whybanner.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
   height: 633px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .why-img {
@@ -65,7 +65,7 @@
   }
 }
 
-@media  (min-width: 740px) and  (max-width: 1024px) {
+@media (min-width: 740px) and (max-width: 1024px) {
   .why-title {
     font-size: 60px;
     transform: translateX(180px);
@@ -101,13 +101,13 @@
   }
 }
 
-@media  (max-width: 739px) {
+@media (max-width: 739px) {
   .why-title {
     font-size: 46px;
     max-width: 228px;
     line-height: 40px;
     font-weight: 700;
-    transform: translate(55%,50%);
+    transform: translate(55%, 50%);
     text-align: left;
     position: absolute;
     top: 23px;
@@ -140,7 +140,7 @@
   .why-img {
     width: 360px;
     height: 218px;
-    margin: 311px 0 0 6px;
+    margin: 370px 0 0 6px;
     text-align: center;
   }
 }
