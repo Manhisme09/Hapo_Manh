@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid login">
     <div class="row justify-content-center login-location">
         <div class="col-md-6">
-            <div class="card">
+            <div class="card login-item">
                 <div class="card-header login-title">{{ __('Sign in to HapoLearn') }}</div>
                 @if (session('error'))
                 <div class="alert alert-danger text-center">
@@ -61,7 +61,7 @@
 
                                 @if (Route::has('password.request'))
                                 <a class="btn btn-link forgot-password" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
+                                    {{ __('Forgot Password?') }}
                                 </a>
                                 @endif
                             </div>

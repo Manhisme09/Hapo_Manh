@@ -1,5 +1,9 @@
 .login-location {
-  margin: 70px 0;
+  padding: 70px 0 130px 0;
+}
+
+.container-fluid.login {
+  background-color: #e5e5e5;
 }
 
 .login-title {
@@ -15,10 +19,15 @@
   margin-top: 16px;
 }
 
+.card.login-item {
+  width: 525px;
+  margin: auto;
+}
+
 .login-label {
   font-family: $fontHapo;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   color: #505353;
@@ -26,7 +35,8 @@
 
 .login-input {
   background-color: rgba($color: #cecece, $alpha: 0.16);
-  border: 1px solid black;
+  border: 1px solid #cecece;
+  height: 42px;
 }
 
 .btn-submit,
@@ -36,6 +46,10 @@
   padding: 8px 60px;
   box-shadow: inset 0px 1.5px 2px #6f8710;
   border-radius: 22px;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .forgot-password {
@@ -47,6 +61,10 @@
   text-decoration-line: underline;
   color: #a6cb16;
   float: right;
+
+  &:hover {
+    color: $greenHapo;
+  }
 }
 
 .sign-with {
@@ -63,7 +81,7 @@
   padding: 0 21px;
   left: 35%;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   color: #505353;
