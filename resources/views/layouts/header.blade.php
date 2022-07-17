@@ -19,7 +19,7 @@
                     <a class="nav-link" href="{{ route('login') }}">LOGIN/REGISTER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROFILE</a>
+                    <a class="nav-link" href="{{ route('logout') }}">PROFILE</a>
                 </li>
             </ul>
         </div>

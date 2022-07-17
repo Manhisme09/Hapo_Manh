@@ -52,4 +52,9 @@ class LoginController extends Controller
             return redirect('/login')->with('error', __('message.login_fail'));
         }
     }
+
+    public function logout()
+    {
+        Auth::logout();
+    }
 }
