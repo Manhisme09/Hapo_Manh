@@ -17,7 +17,10 @@
                 </li>
                 @if(Auth::user())
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('logout') }}">LOGOUT</a>
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn nav-link">LOGOUT</button>
+                    </form>
                 </li>
                 @else
                 <li class="nav-item">
@@ -27,9 +30,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">PROFILE</a>
                 </li>
-                @if (session('name'))
+                @if (Auth::user())
                 <li>
-                    <a class="nav-link hello">Xin chào, {{ session('name') }}</a>
+                    <a class="nav-link hello">Xin chào, {{Auth::user()->name}}</a>
                 </li>
                 @endif
             </ul>
