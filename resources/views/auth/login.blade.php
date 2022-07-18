@@ -89,13 +89,12 @@
                                 <p class="title-google title-register">or New to HapoLearn</p>
                             </div>
                         </div>
-
-                        <div class="from-group row mt-5 justify-content-center">
-                            <button type="submit" class="btn btn-register">
-                                {{ __('Create New Account') }}
-                            </button>
-                        </div>
                     </form>
+                    <div class="from-group row mt-5 justify-content-center">
+                        <a href="{{ route('register') }}" class="btn btn-register">
+                            {{ __('Create New Account') }}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
