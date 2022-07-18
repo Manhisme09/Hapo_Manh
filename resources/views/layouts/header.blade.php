@@ -15,12 +15,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">ALL COURSES</a>
                 </li>
+                @if(Auth::user())
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('logout') }}">LOGOUT</a>
+                </li>
+                @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">LOGIN/REGISTER</a>
                 </li>
+                @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('logout') }}">PROFILE</a>
+                    <a class="nav-link" href="#">PROFILE</a>
                 </li>
+                @if (session('name'))
+                <li>
+                    <a class="nav-link hello">Xin chào, {{ session('name') }}</a>
+                </li>
+                @endif
             </ul>
         </div>
     </nav>

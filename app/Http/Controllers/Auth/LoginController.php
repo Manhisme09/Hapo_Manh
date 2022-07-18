@@ -47,6 +47,7 @@ class LoginController extends Controller
             'password' => $request['password'],
         ];
         if (Auth::attempt($credentials)) {
+            $request->session()->put('name', Auth::user()->name);
             return redirect('/');
         } else {
             return redirect('/login')->with('error', __('message.login_fail'));
@@ -55,6 +56,8 @@ class LoginController extends Controller
 
     public function logout()
     {
+        session()->forget('name');
         Auth::logout();
+        return redirect('/');
     }
 }

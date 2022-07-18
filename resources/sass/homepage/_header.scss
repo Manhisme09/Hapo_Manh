@@ -8,7 +8,7 @@
   min-height: 54vh;
 }
 
-.navbar-nav{
+.navbar-nav {
   .nav-item {
     margin-right: 20px;
 
@@ -30,13 +30,17 @@
     .nav-link:hover {
       color: white;
     }
+
+    .nav-link.hello:hover {
+      color: #505353;
+    }
   }
 }
 
 @media (max-width: 1024px) and (min-width: 740px) {
-  .navbar-nav{
+  .navbar-nav {
     .nav-item {
-      border-bottom: 1px solid #F1F1F1;
+      border-bottom: 1px solid #f1f1f1;
       &:hover {
         background: #f8f9fa;
         border-radius: 0%;
@@ -58,9 +62,9 @@
 }
 
 @media (max-width: 739px) {
-  .navbar-nav{
+  .navbar-nav {
     .nav-item {
-      border-bottom: 1px solid #F1F1F1;
+      border-bottom: 1px solid #f1f1f1;
       &:hover {
         background: #f8f9fa;
         border-radius: 0%;
