@@ -1,12 +1,12 @@
-.logout-location {
+.register-location {
   padding: 70px 0 130px 0;
 }
 
-.container-fluid.logout {
+.container-fluid.register {
   background-color: #e5e5e5;
 }
 
-.logout-title {
+.register-title {
   font-family: $fontHapo;
   border: none;
   text-align: center;
@@ -19,12 +19,12 @@
   margin-top: 16px;
 }
 
-.card.logout-item {
+.card.register-item {
   width: 525px;
   margin: auto;
 }
 
-.logout-label {
+.register-label {
   font-family: $fontHapo;
   font-style: normal;
   font-weight: bold;
@@ -33,7 +33,7 @@
   color: #505353;
 }
 
-.logout-input {
+.register-input {
   background-color: rgba($color: #cecece, $alpha: 0.16);
   border: 1px solid #cecece;
   height: 42px;
