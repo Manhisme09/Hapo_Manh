@@ -56,7 +56,6 @@ class RegisterController extends Controller
     {
         $user = $this->store($request->all());
         Auth::login($user);
-        $alert = __('message.register_successful');
-        return redirect('/')->with('alert', $alert);
+        return redirect('/')->with('success', __('message.register_successful'));
     }
 }

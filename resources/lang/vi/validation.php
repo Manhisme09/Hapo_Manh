@@ -14,8 +14,9 @@ return [
     */
 
     'required' => 'Trường :attribute bắt buộc phải điền.',
-    'email' => ':attribute phải là một địa chỉ email hợp lệ.
-    ',
+    'email' => ':attribute phải là một địa chỉ email hợp lệ.',
+    'unique' => ':attribute đã được đăng ký.',
+    'confirmed' => 'Password confirmation không khớp.',
     'max' => [
         'string' => 'Trường :attribute không được lớn hơn :max ký tự.',
     ],

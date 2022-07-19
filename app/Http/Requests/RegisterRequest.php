@@ -26,6 +26,8 @@ class RegisterRequest extends FormRequest
         return [
             'username' => [
                 'required',
+                'max:30',
+                'unique:users',
             ],
             'email' => [
                 'required',
@@ -46,6 +48,7 @@ class RegisterRequest extends FormRequest
             'confirmed' => __('validation.confirmed'),
             'email' => __('validation.email'),
             'max' => __('validation.max'),
+            'unique' => __('validation.unique'),
         ];
     }
 }
