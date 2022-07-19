@@ -5,7 +5,7 @@
     <div class="row justify-content-center register-location">
         <div class="col-md-6">
             <div class="card register-item">
-                <div class="card-header register-title">{{ __('Sign up to HapoLearn') }}</div>
+                <div class="card-header register-title">{{ __('message.Sign_up') }} HapoLearn</div>
                 @if (session('error'))
                 <div class="alert alert-danger text-center">
                     {{ session('error') }}
@@ -18,7 +18,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="username" class="col-md-4 col-form-label text-md-left p-0 register-label">{{
-                                    __('Username') }}</label>
+                                    __('message.Username') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -41,7 +41,8 @@
                             </div>
 
                             <div class="col-md-12">
-                                <input id="email" class="form-control @error('email') is-invalid @enderror register-input"
+                                <input id="email"
+                                    class="form-control @error('email') is-invalid @enderror register-input"
                                     value="{{ old('email') }}" name="email" autocomplete="current-email">
 
                                 @error('email')
@@ -55,7 +56,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="password" class="col-md-4 col-form-label text-md-left p-0 register-label">{{
-                                    __('Password') }}</label>
+                                    __('message.Password') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -75,7 +76,7 @@
                             <div class="col-md-12">
                                 <label for="password_confirm"
                                     class="col-md-4 col-form-label text-md-left p-0 register-label">{{
-                                    __('Confirm Password') }}</label>
+                                    __('message.Confirm_Password') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -92,7 +93,7 @@
                         </div>
                         <div class="from-group row mt-5 justify-content-center">
                             <button type="submit" class="btn btn-register">
-                                {{ __('Sign up') }}
+                                {{ __('message.Sign_up') }}
                             </button>
                         </div>
                     </form>
