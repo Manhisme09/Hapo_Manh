@@ -13,9 +13,11 @@ return [
     |
     */
 
-    'required' => 'El campo :attribute es obligatorio.',
+    'required' => 'Trường :attribute bắt buộc phải điền.',
+    'email' => ':attribute phải là một địa chỉ email hợp lệ.
+    ',
     'max' => [
-        'string' => 'El :attribute no debe tener más de :max caracteres.',
+        'string' => 'Trường :attribute không được lớn hơn :max ký tự.',
     ],
 
     /*

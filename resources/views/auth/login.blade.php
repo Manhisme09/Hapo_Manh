@@ -22,7 +22,7 @@
                             </div>
 
                             <div class="col-md-12">
-                                <input id="username" type="username"
+                                <input id="username" type="text"
                                     class="form-control @error('username') is-invalid @enderror login-input"
                                     name="username" value="{{ old('username') }}" autocomplete="username" autofocus>
 

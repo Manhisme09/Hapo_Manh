@@ -42,9 +42,10 @@ class LoginController extends Controller
 
     public function login(LoginRequest $request)
     {
-        $credentials = $request->only('username', 'password');
-        // echo $request['username'] . $request['password'];
-        // dd();
+        $credentials = [
+            'username' => $request['username'],
+            'password' => $request['password'],
+        ];
         if (Auth::attempt($credentials)) {
             return redirect('/');
         } else {

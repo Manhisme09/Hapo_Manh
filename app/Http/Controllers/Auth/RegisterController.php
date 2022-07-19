@@ -8,6 +8,7 @@ use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
@@ -41,11 +42,20 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    protected function store(array $data)
+    {
+        return User::create([
+            'username' => $data['username'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
+    }
+
     public function register(RegisterRequest $request)
     {
-        $data = $request->all();
-        $user = User::create($data);
+        $user = $this->store($request->all());
         Auth::login($user);
-        return redirect('/');
+        $alert =  __('message.register_successful');
+        return redirect('/')->with('alert', $alert);
     }
 }

@@ -41,9 +41,8 @@
                             </div>
 
                             <div class="col-md-12">
-                                <input id="email" type="email"
-                                    class="form-control @error('email') is-invalid @enderror logout-input" name="email"
-                                    autocomplete="current-email">
+                                <input id="email" class="form-control @error('email') is-invalid @enderror logout-input"
+                                    value="{{ old('email') }}" name="email" autocomplete="current-email">
 
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -62,7 +61,7 @@
                             <div class="col-md-12">
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror logout-input"
-                                    name="password" autocomplete="current-password">
+                                    name="password">
 
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -74,15 +73,15 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <label for="confirm_password"
+                                <label for="password_confirm"
                                     class="col-md-4 col-form-label text-md-left p-0 logout-label">{{
                                     __('Confirm Password') }}</label>
                             </div>
 
                             <div class="col-md-12">
-                                <input id="confirm_password" type="confirm_password"
+                                <input id="password_confirm" type="password"
                                     class="form-control @error('confirm_password') is-invalid @enderror logout-input"
-                                    name="confirm_password" autocomplete="current-confirm_password">
+                                    name="password_confirmation">
 
                                 @error('confirm_password')
                                 <span class="invalid-feedback" role="alert">

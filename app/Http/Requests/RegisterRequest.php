@@ -34,11 +34,8 @@ class RegisterRequest extends FormRequest
             'password' => [
                 'required',
                 'confirmed',
+                'max:7',
             ],
-            'confirm_password' => [
-                'required',
-            ],
-
         ];
     }
 
@@ -47,6 +44,8 @@ class RegisterRequest extends FormRequest
         return [
             'required' => __('validation.required'),
             'confirmed' => __('validation.confirmed'),
+            'email' => __('validation.email'),
+            'max' => __('validation.max'),
         ];
     }
 }
