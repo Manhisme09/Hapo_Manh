@@ -5,7 +5,7 @@
     <div class="row justify-content-center login-location">
         <div class="col-md-6">
             <div class="card login-item">
-                <div class="card-header login-title">{{ __('message.Sign_in') }} HapoLearn</div>
+                <div class="card-header login-title">{{ __('message.sign_in') }} HapoLearn</div>
                 @if (session('error'))
                 <div class="alert alert-danger text-center">
                     {{ session('error') }}
@@ -18,7 +18,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="username" class="col-md-4 col-form-label text-md-left p-0 login-label">{{
-                                    __('message.Username') }}</label>
+                                    __('message.username') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -37,7 +37,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="password" class="col-md-4 col-form-label text-md-left p-0 login-label">{{
-                                    __('message.Password') }}</label>
+                                    __('message.password') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -56,12 +56,12 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-submit">
-                                    {{ __('message.Sign_in') }}
+                                    {{ __('message.sign_in') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
                                 <a class="btn btn-link forgot-password" href="{{ route('password.request') }}">
-                                    {{ __('message.Forgot_Password') }}
+                                    {{ __('message.forgot_password') }}
                                 </a>
                                 @endif
                             </div>
@@ -69,7 +69,7 @@
 
                         <div class="form-group row justify-content-center">
                             <div class="col-md-10 sign-with">
-                                <p class="title-google">{{ __('message.Sign_in_with') }}</p>
+                                <p class="title-google">{{ __('message.sign_in_with') }}</p>
                             </div>
                         </div>
 
@@ -93,7 +93,7 @@
                     </form>
                     <div class="from-group row mt-5 justify-content-center">
                         <a href="{{ route('register') }}" class="btn btn-register">
-                            {{ __('message.Create_new_account') }}
+                            {{ __('message.create_new_account') }}
                         </a>
                     </div>
                 </div>

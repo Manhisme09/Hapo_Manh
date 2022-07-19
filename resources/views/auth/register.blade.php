@@ -5,7 +5,7 @@
     <div class="row justify-content-center register-location">
         <div class="col-md-6">
             <div class="card register-item">
-                <div class="card-header register-title">{{ __('message.Sign_up') }} HapoLearn</div>
+                <div class="card-header register-title">{{ __('message.sign_up') }} HapoLearn</div>
                 @if (session('error'))
                 <div class="alert alert-danger text-center">
                     {{ session('error') }}
@@ -18,7 +18,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="username" class="col-md-4 col-form-label text-md-left p-0 register-label">{{
-                                    __('message.Username') }}</label>
+                                    __('message.username') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -56,7 +56,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="password" class="col-md-4 col-form-label text-md-left p-0 register-label">{{
-                                    __('message.Password') }}</label>
+                                    __('message.password') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -76,7 +76,7 @@
                             <div class="col-md-12">
                                 <label for="password_confirm"
                                     class="col-md-4 col-form-label text-md-left p-0 register-label">{{
-                                    __('message.Confirm_Password') }}</label>
+                                    __('message.confirm_password') }}</label>
                             </div>
 
                             <div class="col-md-12">
@@ -93,7 +93,7 @@
                         </div>
                         <div class="from-group row mt-5 justify-content-center">
                             <button type="submit" class="btn btn-register">
-                                {{ __('message.Sign_up') }}
+                                {{ __('message.sign_up') }}
                             </button>
                         </div>
                     </form>
