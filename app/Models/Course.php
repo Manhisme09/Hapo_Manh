@@ -47,7 +47,7 @@ class Course extends Model
 
     public function getAllCourse()
     {
-        $all_courses = Course::all();
-        return $all_courses;
+        $allCourses = Course::all();
+        return $allCourses;
     }
 }
