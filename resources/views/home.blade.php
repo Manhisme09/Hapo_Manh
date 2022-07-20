@@ -38,38 +38,6 @@
             </div>
         </div>
         @endforeach
-        {{-- <div class="course-two col-lg-4">
-            <div class="card item">
-                <div class="row no-gutters">
-                    <div class="card-img-top col-lg-12 col-md-4">
-                        <div class="logo"></div>
-                    </div>
-                    <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
-                            had
-                            coded quite a bit, but never touched anything in regards to web development.</p>
-                        <a href="#" class="btn btn-hapo">Take This Course</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="course-three col-lg-4">
-            <div class="card item">
-                <div class="row no-gutters">
-                    <div class="card-img-top col-lg-12 col-md-4">
-                        <div class="logo"></div>
-                    </div>
-                    <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
-                            had
-                            coded quite a bit, but never touched anything in regards to web development.</p>
-                        <a href="#" class="btn btn-hapo">Take This Course</a>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
 
     </div>
     <div class="other-course">
@@ -93,36 +61,6 @@
             </div>
         </div>
         @endforeach
-        {{-- <div class="course-other-two col-lg-4">
-            <div class="card item">
-                <div class="row no-gutters">
-                    <div class="card-other-img-top col-lg-12 col-md-4">
-                        <div class="logo-other"></div>
-                    </div>
-                    <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
-                            Media,...</p>
-                        <a href="#" class="btn btn-hapo">Take This Course</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="course-other-three col-lg-4">
-            <div class="card item">
-                <div class="row no-gutters">
-                    <div class="card-other-img-top col-lg-12 col-md-4">
-                        <div class="logo-other"></div>
-                    </div>
-                    <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
-                            Media,...</p>
-                        <a href="#" class="btn btn-hapo">Take This Course</a>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
     </div>
     <div class="view-all">
         <a href="#">View All Our Courses <i class="fa-solid fa-arrow-right-long"></i> </a>
@@ -206,111 +144,6 @@
             </div>
         </div>
         @endforeach
-        {{-- <div class="feedback-item">
-            <div class="feedback-content">
-                <div class="title">
-                    <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
-                        a
-                        good
-                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                    </p>
-                </div>
-
-            </div>
-            <div class="feedback-user">
-                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
-                <div class="infor">
-                    <p class="name">Nguyen Duc Manh</p>
-                    <p class="language">PHP</p>
-                    <div class="evaluate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feedback-item">
-            <div class="feedback-content">
-                <div class="title">
-                    <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
-                        a
-                        good
-                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                    </p>
-                </div>
-            </div>
-            <div class="feedback-user">
-                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
-                <div class="infor">
-                    <p class="name">Nguyen Duc Manh</p>
-                    <p class="language">PHP</p>
-                    <div class="evaluate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feedback-item">
-            <div class="feedback-content">
-                <div class="title">
-                    <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
-                        a
-                        good
-                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                    </p>
-                </div>
-            </div>
-            <div class="feedback-user">
-                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
-                <div class="infor">
-                    <p class="name">Nguyen Duc Manh</p>
-                    <p class="language">PHP</p>
-                    <div class="evaluate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feedback-item">
-            <div class="feedback-content">
-                <div class="title">
-                    <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
-                        a
-                        good
-                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                    </p>
-                </div>
-            </div>
-            <div class="feedback-user">
-                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
-                <div class="infor">
-                    <p class="name">Nguyen Duc Manh</p>
-                    <p class="language">PHP</p>
-                    <div class="evaluate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
     </div>
 </section>
 
