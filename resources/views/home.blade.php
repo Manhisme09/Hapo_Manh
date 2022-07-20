@@ -5,6 +5,7 @@
 <section>
     <div class="banner col-md-12">
         <div class="banner-title col-md-12">
+            @if(session('success'))    <section class='alert alert-success'>{{session('success')}}</section>@endif  
             <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img class="owl"
                             src="{{ asset('images/owl.png') }}" alt=""></span>!</span>
             </p>

@@ -15,12 +15,26 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">ALL COURSES</a>
                 </li>
+                @if(Auth::user())
+                <li class="nav-item">
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn nav-link">LOGOUT</button>
+                    </form>
+                </li>
+                @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">LOGIN/REGISTER</a>
                 </li>
+                @endif
                 <li class="nav-item">
                     <a class="nav-link" href="#">PROFILE</a>
                 </li>
+                @if (Auth::user())
+                <li>
+                    <a class="nav-link hello">Xin chào, {{Auth::user()->name}}</a>
+                </li>
+                @endif
             </ul>
         </div>
     </nav>
