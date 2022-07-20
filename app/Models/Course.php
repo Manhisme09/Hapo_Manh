@@ -45,9 +45,9 @@ class Course extends Model
         return $courses;
     }
 
-    public function getAllCourse()
+    public function getCountCourse()
     {
-        $allCourses = Course::all();
-        return $allCourses;
+        $coursesCount = Course::all();
+        return $coursesCount->count();
     }
 }

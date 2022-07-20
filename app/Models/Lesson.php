@@ -33,9 +33,9 @@ class Lesson extends Model
         return $this->hasMany(Program::class);
     }
 
-    public function getAllLesson()
+    public function getCountLesson()
     {
-        $allLessons = Lesson::all();
-        return $allLessons;
+        $lessonsCount = Lesson::all();
+        return $lessonsCount->count();
     }
 }

@@ -30,9 +30,9 @@ class HomeController extends Controller
             [
                 'courses' => $this->course->getThreeCourse(),
                 'reviews' => $this->review->getReview(),
-                'all_courses' => $this->course->getAllCourse(),
-                'all_lessons' => $this->lesson->getAllLesson(),
-                'all_users' => $this->user->getAllUser(),
+                'coursesCount' => $this->course->getCountCourse(),
+                'lessonsCount' => $this->lesson->getCountLesson(),
+                'usersCount' => $this->user->getCountUser(),
             ]
         );
     }

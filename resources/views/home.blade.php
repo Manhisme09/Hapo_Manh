@@ -27,10 +27,10 @@
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
                         {{-- <div class="logo"></div> --}}
-                        <img src="{{$item['image']}}" class="logo-course" alt="">
+                        <img src="{{ $item['image'] }}" class="logo-course" alt="">
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">{{$item['course_name']}}</h5>
+                        <h5 class="card-title">{{ $item['course_name'] }}</h5>
                         <p class="card-text">{{ Str::limit($item['description'], 100) }}</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
@@ -50,10 +50,10 @@
                 <div class="row no-gutters">
                     <div class="card-other-img-top col-lg-12 col-md-4">
                         {{-- <div class="logo-other"></div> --}}
-                        <img src="{{$item['image']}}" class="logo-course" alt="">
+                        <img src="{{ $item['image'] }}" class="logo-course" alt="">
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">{{$item['course_name']}}</h5>
+                        <h5 class="card-title">{{ $item['course_name'] }}</h5>
                         <p class="card-text">{{ Str::limit($item['description'], 70) }}</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
@@ -118,12 +118,12 @@
 
 <section class="container">
     <div class="feedback-slider">
-        @foreach ($reviews as $item )
+        @foreach ( $reviews as $item )
         <div class="feedback-item">
             <div class="feedback-content">
                 <div class="title">
                     <p>
-                        “{{$item['content']}}”
+                        “{{ $item['content'] }}”
                     </p>
                 </div>
 
@@ -131,13 +131,13 @@
             <div class="feedback-user">
                 <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
                 <div class="infor">
-                    <p class="name">{{$item['name']}}</p>
-                    <p class="language">{{$item['course_name']}}</p>
+                    <p class="name">{{ $item['name'] }}</p>
+                    <p class="language">{{ $item['course_name'] }}</p>
                     <div class="evaluate">
                         @php
-                        $a = $item['star'];
+                        $stars = $item['star'];
                         @endphp
-                        @for($i = 0; $i < $a ; $i++) <i class="fa-solid fa-star"></i>
+                        @for($i = 0; $i < $stars ; $i++) <i class="fa-solid fa-star"></i>
                             @endfor
                     </div>
                 </div>
@@ -168,15 +168,15 @@
             <div class="row">
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Courses</p>
-                    <p class="statistic-quantity">{{$all_courses->count()}}</p>
+                    <p class="statistic-quantity">{{ $coursesCount }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Lessons</p>
-                    <p class="statistic-quantity">{{$all_lessons->count()}}</p>
+                    <p class="statistic-quantity">{{ $lessonsCount }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">{{$all_users->count()}}</p>
+                    <p class="statistic-quantity">{{ $usersCount }}</p>
                 </div>
             </div>
         </div>
