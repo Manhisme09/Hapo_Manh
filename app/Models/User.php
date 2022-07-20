@@ -48,7 +48,7 @@ class User extends Authenticatable
 
     public function getAllUser()
     {
-        $all_users = User::all();
-        return $all_users;
+        $allUsers = User::all();
+        return $allUsers;
     }
 }

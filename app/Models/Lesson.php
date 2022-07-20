@@ -35,7 +35,7 @@ class Lesson extends Model
 
     public function getAllLesson()
     {
-        $all_lessons = Lesson::all();
-        return $all_lessons;
+        $allLessons = Lesson::all();
+        return $allLessons;
     }
 }
