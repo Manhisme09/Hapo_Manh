@@ -28,4 +28,12 @@ class Review extends Model
     {
         return $this->belongsTo(Course::class);
     }
+
+    public function getReview()
+    {
+        $reviews = Review::join('users', 'users.id', '=', 'reviews.user_id')
+            ->join('courses', 'courses.id', '=', 'reviews.course_id')
+            ->get(['users.name', 'reviews.content', 'reviews.star', 'courses.course_name']);
+        return $reviews;
+    }
 }

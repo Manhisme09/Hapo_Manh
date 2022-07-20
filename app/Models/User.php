@@ -45,4 +45,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Review::class);
     }
+
+    public function getAllUser()
+    {
+        $all_users = User::all();
+        return $all_users;
+    }
 }

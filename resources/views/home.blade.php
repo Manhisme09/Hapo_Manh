@@ -5,7 +5,7 @@
 <section>
     <div class="banner col-md-12">
         <div class="banner-title col-md-12">
-            @if(session('success'))    <section class='alert alert-success'>{{session('success')}}</section>@endif  
+            @if(session('success'))    <section class='alert alert-success'>{{session('success')}}</section>@endif
             <p class="banner-title-first">Learn Anytime, Anywhere <br> <span>at HapoLearn<span><img class="owl"
                             src="{{ asset('images/owl.png') }}" alt=""></span>!</span>
             </p>
@@ -20,23 +20,25 @@
 
 <section class="container courses">
     <div class="row courses">
+        @foreach ( $courses as $item )
         <div class="course-one col-lg-4">
+
             <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
-                        <div class="logo"></div>
+                        {{-- <div class="logo"></div> --}}
+                        <img src="{{$item['image']}}" class="logo-course" alt="">
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
-                            had
-                            coded quite a bit, but never touched anything in regards to web development.</p>
+                        <h5 class="card-title">{{$item['course_name']}}</h5>
+                        <p class="card-text">{{ Str::limit($item['description'], 100) }}</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="course-two col-lg-4">
+        @endforeach
+        {{-- <div class="course-two col-lg-4">
             <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
@@ -67,29 +69,31 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </div>
     <div class="other-course">
         <p class="other-title">Other courses</p>
     </div>
     <div class="row courses other">
+        @foreach ( $courses as $item )
         <div class="course-other-one col-lg-4">
             <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-other-img-top col-lg-12 col-md-4">
-                        <div class="logo-other"></div>
+                        {{-- <div class="logo-other"></div> --}}
+                        <img src="{{$item['image']}}" class="logo-course" alt="">
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
-                        <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
-                            Media,...</p>
+                        <h5 class="card-title">{{$item['course_name']}}</h5>
+                        <p class="card-text">{{ Str::limit($item['description'], 70) }}</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="course-other-two col-lg-4">
+        @endforeach
+        {{-- <div class="course-other-two col-lg-4">
             <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-other-img-top col-lg-12 col-md-4">
@@ -118,7 +122,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
     <div class="view-all">
         <a href="#">View All Our Courses <i class="fa-solid fa-arrow-right-long"></i> </a>
@@ -176,11 +180,38 @@
 
 <section class="container">
     <div class="feedback-slider">
+        @foreach ($reviews as $item )
         <div class="feedback-item">
             <div class="feedback-content">
                 <div class="title">
                     <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        “{{$item['content']}}”
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback-user">
+                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
+                <div class="infor">
+                    <p class="name">{{$item['name']}}</p>
+                    <p class="language">{{$item['course_name']}}</p>
+                    <div class="evaluate">
+                        @php
+                        $a = $item['star'];
+                        @endphp
+                        @for($i = 0; $i < $a ; $i++) <i class="fa-solid fa-star"></i>
+                            @endfor
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endforeach
+        {{-- <div class="feedback-item">
+            <div class="feedback-content">
+                <div class="title">
+                    <p>
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
+                        a
                         good
                         Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
                     </p>
@@ -206,59 +237,8 @@
             <div class="feedback-content">
                 <div class="title">
                     <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
-                        good
-                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                    </p>
-                </div>
-
-            </div>
-            <div class="feedback-user">
-                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
-                <div class="infor">
-                    <p class="name">Nguyen Duc Manh</p>
-                    <p class="language">PHP</p>
-                    <div class="evaluate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feedback-item">
-            <div class="feedback-content">
-                <div class="title">
-                    <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
-                        good
-                        Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                    </p>
-                </div>
-
-            </div>
-            <div class="feedback-user">
-                <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
-                <div class="infor">
-                    <p class="name">Nguyen Duc Manh</p>
-                    <p class="language">PHP</p>
-                    <div class="evaluate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feedback-item">
-            <div class="feedback-content">
-                <div class="title">
-                    <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
+                        a
                         good
                         Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
                     </p>
@@ -283,7 +263,8 @@
             <div class="feedback-content">
                 <div class="title">
                     <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
+                        a
                         good
                         Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
                     </p>
@@ -308,7 +289,8 @@
             <div class="feedback-content">
                 <div class="title">
                     <p>
-                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a
+                        “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming
+                        a
                         good
                         Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
                     </p>
@@ -328,7 +310,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>
 
@@ -353,15 +335,15 @@
             <div class="row">
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Courses</p>
-                    <p class="statistic-quantity">1,586</p>
+                    <p class="statistic-quantity">{{$all_courses->count()}}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Lessons</p>
-                    <p class="statistic-quantity">2,689</p>
+                    <p class="statistic-quantity">{{$all_lessons->count()}}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">16,882</p>
+                    <p class="statistic-quantity">{{$all_users->count()}}</p>
                 </div>
             </div>
         </div>

@@ -38,4 +38,16 @@ class Course extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+
+    public function getThreeCourse()
+    {
+        $courses = Course::limit(3)->get();
+        return $courses;
+    }
+
+    public function getAllCourse()
+    {
+        $all_courses = Course::all();
+        return $all_courses;
+    }
 }

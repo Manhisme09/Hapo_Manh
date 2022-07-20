@@ -32,4 +32,10 @@ class Lesson extends Model
     {
         return $this->hasMany(Program::class);
     }
+
+    public function getAllLesson()
+    {
+        $all_lessons = Lesson::all();
+        return $all_lessons;
+    }
 }
