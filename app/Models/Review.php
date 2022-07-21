@@ -31,6 +31,6 @@ class Review extends Model
 
     public function scopeRecentReview($query)
     {
-        return $query->orderBy('posted_at', config('amount.sort_hight_to_low'))->limit(config('amount.review_num_home'))->get();;
+        return $query->orderBy('posted_at', config('amount.sort_hight_to_low'))->limit(config('amount.review_num_home'))->get();
     }
 }
