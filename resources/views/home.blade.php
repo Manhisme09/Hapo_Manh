@@ -130,8 +130,8 @@
             <div class="feedback-user">
                 <div class="image"><img src="{{ asset('images/user.png') }}" alt=""></div>
                 <div class="infor">
-                    <p class="name">{{ $item['name'] }}</p>
-                    <p class="language">{{ $item['course_name'] }}</p>
+                    <p class="name">{{ $item->user->name }}</p>
+                    <p class="language">{{ $item->course->course_name }}</p>
                     <div class="evaluate">
                         @php
                         $stars = $item['star'];
