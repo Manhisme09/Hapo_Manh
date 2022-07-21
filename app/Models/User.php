@@ -45,10 +45,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(Review::class);
     }
-
-    public function getCountUser()
-    {
-        $usersCount = User::all();
-        return $usersCount->count();
-    }
 }

@@ -26,8 +26,7 @@
             <div class="card item">
                 <div class="row no-gutters">
                     <div class="card-img-top col-lg-12 col-md-4">
-                        {{-- <div class="logo"></div> --}}
-                        <img src="{{ $item['image'] }}" class="logo-course" alt="">
+                        <img src="{{ asset($item['image']) }}" class="logo-course" alt="">
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
                         <h5 class="card-title">{{ $item['course_name'] }}</h5>
@@ -176,7 +175,7 @@
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">{{ $usersCount }}</p>
+                    <p class="statistic-quantity">{{ $learners }}</p>
                 </div>
             </div>
         </div>

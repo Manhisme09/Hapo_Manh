@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Scopes\CountScope;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -45,9 +46,8 @@ class Course extends Model
         return $courses;
     }
 
-    public function getCountCourse()
+    public function scopeCountt($query)
     {
-        $coursesCount = Course::all();
-        return $coursesCount->count();
+        return $query->count();
     }
 }

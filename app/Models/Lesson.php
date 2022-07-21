@@ -33,9 +33,8 @@ class Lesson extends Model
         return $this->hasMany(Program::class);
     }
 
-    public function getCountLesson()
+    public function scopeCountt($query)
     {
-        $lessonsCount = Lesson::all();
-        return $lessonsCount->count();
+        return $query->count();
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use App\Models\CourseUser;
 use App\Models\Lesson;
 use App\Models\Review;
 use App\Models\User;
@@ -21,7 +22,7 @@ class HomeController extends Controller
         $this->course = new Course();
         $this->review = new Review();
         $this->lesson = new Lesson();
-        $this->user = new User();
+        $this->courseUser = new CourseUser();
     }
     public function index()
     {
@@ -30,9 +31,9 @@ class HomeController extends Controller
             [
                 'courses' => $this->course->getThreeCourse(),
                 'reviews' => $this->review->getReview(),
-                'coursesCount' => $this->course->getCountCourse(),
-                'lessonsCount' => $this->lesson->getCountLesson(),
-                'usersCount' => $this->user->getCountUser(),
+                'coursesCount' => Course::countt(),
+                'lessonsCount' => Lesson::countt(),
+                'learners' => CourseUser::countt(),
             ]
         );
     }

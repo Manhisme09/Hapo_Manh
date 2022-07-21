@@ -11,6 +11,8 @@ class CourseUser extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $table = 'course_user';
+
     protected $primaryKey = [
         'user_id',
         'course_id',
@@ -20,4 +22,15 @@ class CourseUser extends Model
         'course_id',
         'user_id',
     ];
+
+    public function scopeCountt($query)
+    {
+        return $query->select('user_id')->groupBy('user_id')->get()->count();
+    }
+
+    // public function countLearners()
+    // {
+    //     $countLearners = CourseUser::select('user_id')->groupBy('user_id')->get()->count();
+    //     return $countLearners;
+    // }
 }
