@@ -18,7 +18,7 @@ class HomeController extends Controller
     public function index()
     {
         $otherCourses = Course::showOtherCourses()->get();
-        $reviews = Review::recentReview();
+        $reviews = Review::recentReview()->get();
         $coursesCount = Course::count();
         $lessonsCount = Lesson::count();
         $learners = CourseUser::countLearner()->get()->count();
