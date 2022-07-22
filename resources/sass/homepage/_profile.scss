@@ -1,0 +1,104 @@
+.container-fluid.profile {
+    background-color: #e5e5e5;
+    height: 800px;
+}
+
+.profile-left {
+    .infor {
+        width: 240px;
+        text-align: center;
+
+        .avatar {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .email {
+            border-bottom: 2px solid #dcdcdc;
+        }
+
+        .infor-description {
+            text-align: justify;
+        }
+
+        .first-infor {
+            line-height: 30px;
+        }
+    }
+}
+
+.detail-infor {
+    width: 234px;
+    text-align: left;
+    margin-left: -35px;
+}
+
+.detail-infor-item {
+    .item-card {
+        list-style: none;
+        border-bottom: 2px solid #dcdcdc;
+        height: 33px;
+        margin: 20px 0;
+
+        span {
+            margin-right: 20px;
+        }
+
+        .font-birth {
+            color: #f26525;
+        }
+
+        .font-phone {
+            color: #b2d235;
+        }
+
+        .font-address {
+            color: #662e93;
+        }
+    }
+}
+
+.profile-right {
+    .title-main {
+        border-bottom: 1px solid #b2d235;
+    }
+
+    .line {
+        border-bottom: 1px solid #b2d235;
+        margin-top: -14px;
+    }
+}
+
+.courses-list {
+    display: flex;
+    justify-content: center;
+
+    .courses-item {
+        margin: 0 15px;
+
+        .photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.form-profile {
+    width: 812px;
+    line-height: 35px;
+
+    .birthdate-label {
+        max-width: 142px;
+    }
+
+    .about-textarea {
+        resize: both;
+        height: 110px;
+    }
+
+    .btn-update {
+        margin-top: 25px;
+    }
+}

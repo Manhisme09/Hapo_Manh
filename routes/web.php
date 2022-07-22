@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -18,3 +19,6 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/test', [HomeController::class, 'test'])->middleware('auth');
+Route::resource('profile', ProfileController::class)->except([
+    'show',
+]);

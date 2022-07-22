@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/regular";
@@ -9,18 +9,19 @@
 @import "~slick-carousel/slick/slick-theme";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Variables
-@import 'homepage/header';
-@import 'homepage/banner';
-@import 'homepage/course';
-@import 'homepage/whybanner';
-@import 'homepage/statistic';
-@import 'homepage/feedback';
-@import 'homepage/footer';
-@import 'homepage/login';
-@import 'homepage/register';
+@import "homepage/header";
+@import "homepage/banner";
+@import "homepage/course";
+@import "homepage/whybanner";
+@import "homepage/statistic";
+@import "homepage/feedback";
+@import "homepage/footer";
+@import "homepage/login";
+@import "homepage/register";
+@import "homepage/profile";
