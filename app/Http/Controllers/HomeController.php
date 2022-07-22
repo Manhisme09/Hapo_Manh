@@ -17,12 +17,12 @@ class HomeController extends Controller
 
     public function index()
     {
-        $courses = Course::showCourses();
+        $otherCourses = Course::showOtherCourses()->get();
         $reviews = Review::recentReview();
-        $coursesCount = Course::countCourses();
-        $lessonsCount = Lesson::countLessons();
-        $learners = CourseUser::countLearner();
-        return view('home', compact('courses', 'reviews', 'coursesCount', 'lessonsCount', 'learners'));
+        $coursesCount = Course::count();
+        $lessonsCount = Lesson::count();
+        $learners = CourseUser::countLearner()->get()->count();
+        return view('home', compact('otherCourses', 'reviews', 'coursesCount', 'lessonsCount', 'learners'));
     }
 
     public function test()

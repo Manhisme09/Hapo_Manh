@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Scopes\CountScope;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -40,13 +39,13 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function scopeShowCourses($query)
+    public function scopeShowOtherCourses($query)
     {
-        return $query->limit(config('amount.course_num_home'))->get();
+        return $query->limit(config('amount.course_num_home'));
     }
 
-    public function scopeCountCourses($query)
+    public function scopeCourses($query)
     {
-        return $query->count();
+        return $query->limit(config('amount.course_num_home'));
     }
 }

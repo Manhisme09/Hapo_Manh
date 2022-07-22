@@ -25,6 +25,6 @@ class CourseUser extends Model
 
     public function scopeCountLearner($query)
     {
-        return $query->select('user_id')->groupBy('user_id')->get()->count();
+        return $query->select('user_id')->groupBy('user_id');
     }
 }

@@ -20,7 +20,7 @@
 
 <section class="container courses">
     <div class="row courses">
-        @foreach ( $courses as $item )
+        @foreach ( $otherCourses as $item )
         <div class="course-one col-lg-4">
 
             <div class="card item">
@@ -43,7 +43,7 @@
         <p class="other-title">Other courses</p>
     </div>
     <div class="row courses other">
-        @foreach ( $courses as $item )
+        @foreach ( $otherCourses as $item )
         <div class="course-other-one col-lg-4">
             <div class="card item">
                 <div class="row no-gutters">
