@@ -28,7 +28,7 @@
                 </li>
                 @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROFILE</a>
+                    <a class="nav-link" href="{{ route('profile.index') }}">PROFILE</a>
                 </li>
                 @if (Auth::user())
                 <li>

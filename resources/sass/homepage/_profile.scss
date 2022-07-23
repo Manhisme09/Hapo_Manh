@@ -1,104 +1,140 @@
 .container-fluid.profile {
-    background-color: #e5e5e5;
-    height: 800px;
+  background-color: #e5e5e5;
+  height: 900px;
 }
 
 .profile-left {
-    .infor {
-        width: 240px;
-        text-align: center;
+  margin-top: 55px;
+  max-width: 20%;
 
-        .avatar {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
+  .infor {
+    width: 240px;
+    text-align: center;
 
-        .email {
-            border-bottom: 2px solid #dcdcdc;
-        }
-
-        .infor-description {
-            text-align: justify;
-        }
-
-        .first-infor {
-            line-height: 30px;
-        }
+    .avatar {
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
     }
+
+    .name {
+      font-family: $fontHapo;
+      font-weight: 700;
+      font-size: 25px;
+      color: $colorFooter;
+    }
+
+    .email {
+      border-bottom: 2px solid #dcdcdc;
+      font-family: $fontHapo;
+      font-weight: 400;
+      font-size: 18px;
+      color: $colorFooter;
+    }
+
+    .infor-description {
+      text-align: justify;
+      font-family: $fontHapo;
+      font-weight: 400;
+      font-size: 18px;
+      color: $colorFooter;
+    }
+
+    .first-infor {
+      line-height: 30px;
+    }
+  }
 }
 
 .detail-infor {
-    width: 234px;
-    text-align: left;
-    margin-left: -35px;
+  width: 234px;
+  text-align: left;
+  margin-left: -35px;
 }
 
 .detail-infor-item {
-    .item-card {
-        list-style: none;
-        border-bottom: 2px solid #dcdcdc;
-        height: 33px;
-        margin: 20px 0;
+  .item-card {
+    list-style: none;
+    border-bottom: 2px solid #dcdcdc;
+    height: 33px;
+    margin: 20px 0;
 
-        span {
-            margin-right: 20px;
-        }
-
-        .font-birth {
-            color: #f26525;
-        }
-
-        .font-phone {
-            color: #b2d235;
-        }
-
-        .font-address {
-            color: #662e93;
-        }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      font-family: $fontHapo;
+      color: $colorFooter;
     }
+
+    span {
+      margin-right: 20px;
+    }
+
+    .font-birth {
+      color: #f26525;
+    }
+
+    .font-phone {
+      color: #b2d235;
+    }
+
+    .font-address {
+      color: #662e93;
+    }
+  }
 }
 
 .profile-right {
-    .title-main {
-        border-bottom: 1px solid #b2d235;
-    }
+  margin: 150px 0 0 0;
+  .title-main {
+    border-bottom: 1px solid #b2d235;
+    font-family: $fontHapo;
+    color: $colorFooter;
+    font-weight: bold;
+    font-size: 38px;
+  }
 
-    .line {
-        border-bottom: 1px solid #b2d235;
-        margin-top: -14px;
-    }
+  .line {
+    border-bottom: 1px solid #b2d235;
+    margin-top: -14px;
+  }
 }
 
 .courses-list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
 
-    .courses-item {
-        margin: 0 15px;
+  .courses-item {
+    margin: 0 15px;
 
-        .photo {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
+    .photo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
     }
+  }
 }
 
 .form-profile {
-    width: 812px;
-    line-height: 35px;
+  width: 950px;
+  line-height: 35px;
 
-    .birthdate-label {
-        max-width: 142px;
-    }
+  .title-label {
+    max-width: 165px;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: $fontHapo;
+    color: $colorFooter;
+  }
 
-    .about-textarea {
-        resize: both;
-        height: 110px;
-    }
+  .about-textarea {
+    resize: both;
+    height: 110px;
+  }
 
-    .btn-update {
-        margin-top: 25px;
-    }
+  .btn-update {
+    margin-top: 25px;
+  }
 }

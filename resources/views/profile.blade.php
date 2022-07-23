@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid profile">
     <div class="row justify-content-center">
-        <div class="col-md-4 profile-left">
+        <div class="col-md-3 profile-left">
             <div class="infor">
                 <div class="first-infor">
                     <img class="avatar" src="{{ asset('images/banner.png') }}" alt="">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 profile-right">
+        <div class="col-md-7 profile-right">
             <div class="title">
                 <p class="title-main">My courses</p>
                 <p class="line"></p>
@@ -71,7 +71,7 @@
                         <div class="col-md-5">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <label class="col-md-4 col-form-label text-md-left p-0 name-label">Name:</label>
+                                    <label class="col-md-4 col-form-label text-md-left p-0 title-label">Name:</label>
                                 </div>
 
                                 <div class="col-md-12">
@@ -86,7 +86,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label class="col-md-4 col-form-label text-md-left p-0 birthdate-label">Date of
+                                    <label class="col-md-4 col-form-label text-md-left p-0 title-label">Date of
                                         birthday:</label>
                                 </div>
 
@@ -104,7 +104,7 @@
 
                                 <div class="col-md-12">
                                     <label for="address"
-                                        class="col-md-4 col-form-label text-md-left p-0 address-label">Address:</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 title-label">Address:</label>
                                 </div>
 
                                 <div class="col-md-12">
@@ -121,7 +121,7 @@
 
                                 <div class="col-md-12">
                                     <button type="submit" class="btn btn-submit btn-update">
-                                        Cập nhập
+                                        Update
                                     </button>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="email"
-                                        class="col-md-4 col-form-label text-md-left p-0 email-label">Email:</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 title-label">Email:</label>
                                 </div>
 
                                 <div class="col-md-12">
@@ -149,7 +149,7 @@
 
                                 <div class="col-md-12">
                                     <label for="phone"
-                                        class="col-md-4 col-form-label text-md-left p-0 phone-label">Phone:</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 title-label">Phone:</label>
                                 </div>
 
                                 <div class="col-md-12">
@@ -165,14 +165,14 @@
 
                                 <div class="col-md-12">
                                     <label for="about-me"
-                                        class="col-md-4 col-form-label text-md-left p-0 about-me-label">About
+                                        class="col-md-4 col-form-label text-md-left p-0 title-label">About
                                         me:</label>
                                 </div>
 
                                 <div class="col-md-12">
                                     <textarea id="about-me" class="form-control about-textarea" name="about-me"
                                         value="{{ old('about-me') }}" autocomplete="about-me"
-                                        placeholder="About you..."> </textarea>
+                                        placeholder="About you..."></textarea>
 
                                     @error('about-me')
                                     <span class="invalid-feedback" role="alert">
