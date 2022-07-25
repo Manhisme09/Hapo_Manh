@@ -20,7 +20,7 @@
 
 <section class="container courses">
     <div class="row courses">
-        @foreach ( $cheapCourses as $item )
+        @foreach ( $courses as $item )
         <div class="course-one col-lg-4">
 
             <div class="card item">
@@ -167,11 +167,11 @@
             <div class="row">
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Courses</p>
-                    <p class="statistic-quantity">{{ $coursesCount }}</p>
+                    <p class="statistic-quantity">{{ $totalCourse }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Lessons</p>
-                    <p class="statistic-quantity">{{ $lessonsCount }}</p>
+                    <p class="statistic-quantity">{{ $totalLesson }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>

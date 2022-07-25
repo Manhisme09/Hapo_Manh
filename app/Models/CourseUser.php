@@ -23,7 +23,7 @@ class CourseUser extends Model
         'user_id',
     ];
 
-    public function scopeCountLearner($query)
+    public function scopeLearner($query)
     {
         return $query->select('user_id')->groupBy('user_id');
     }
