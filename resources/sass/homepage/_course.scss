@@ -7,23 +7,14 @@
 }
 
 .card.item {
-  width: 355px;
-  height: 470px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 
   .card-img-top {
-    width: 354px;
-    height: 215px;
-    position: relative;
-    border-radius: 15px 15px 0 0;
-    .logo {
-      background-size: cover;
-      width: 226px;
-      height: 125px;
-      position: absolute;
-      left: 72px;
-      top: 42px;
+    .logo-course {
+      width: 348px;
+      height: 215px;
+      border-radius: 15px 15px 0 0;
     }
   }
 
@@ -66,88 +57,22 @@
   }
 
   .card-other-img-top {
-    width: 354px;
-    height: 215px;
-    position: relative;
-    border-radius: 15px 15px 0 0;
-
-    .logo-other {
-      background-size: cover;
-      position: absolute;
-    }
-  }
-}
-
-.course-two {
-  .card-img-top {
-    background-color: #dc594c;
-
-    .logo {
-      background-image: url("/images/laravel.png");
-      width: 189.24px;
-      height: 128.95px;
-    }
-  }
-}
-
-.course-one {
-  .card-img-top {
-    background-color: #3f6185;
-
-    .logo {
-      background-image: url("/images/html.png");
-    }
-  }
-}
-
-.course-three {
-  .card-img-top {
-    background-color: #556598;
-
-    .logo {
-      background-image: url("/images/php.png");
+    .logo-course {
+      width: 353px;
+      height: 215px;
+      border-radius: 15px 15px 0 0;
     }
   }
 }
 
 .course-other-one {
   .card-other-img-top {
-    background-color: #24abe2;
-
     .logo-other {
       background-image: url("/images/CSS.png");
       width: 198px;
       height: 73px;
       left: 79px;
       top: 70px;
-    }
-  }
-}
-
-.course-other-two {
-  .card-other-img-top {
-    background-color: #e14e40;
-
-    .logo-other {
-      background-image: url("/images/CSS.png");
-      width: 198px;
-      height: 73px;
-      left: 79px;
-      top: 70px;
-    }
-  }
-}
-
-.course-other-three {
-  .card-other-img-top {
-    background-color: #1b75bb;
-
-    .logo-other {
-      background-image: url("/images/java.png");
-      width: 204px;
-      height: 145px;
-      left: 88px;
-      top: 25px;
     }
   }
 }
@@ -189,7 +114,7 @@
       margin: auto;
       margin-bottom: 25px;
 
-      .card-img-top {
+      .logo-course {
         width: 280px;
         height: 163px;
       }
@@ -277,8 +202,8 @@
 
 @media (max-width: 1024px) and (min-width: 740px) {
   .container {
-    .course-two {
-      margin: 25px 0 25px 0;
+    .course-one {
+      margin-bottom: 25px;
     }
   }
 
@@ -287,16 +212,10 @@
     height: 158.44px;
 
     .card-img-top {
-      width: 240px;
-      height: 158.44px;
-      border-radius: 15px 0 0 15px;
-
-      .logo {
-        width: 166px;
-        height: 92.4px;
-        position: absolute;
-        left: 33px;
-        top: 38px;
+      .logo-course {
+        width: 240px;
+        height: 158.44px;
+        border-radius: 15px 0 0 15px;
       }
     }
 
@@ -336,45 +255,19 @@
       height: 158.44px;
     }
 
-    .course-other-two {
-      margin: 25px 0 25px 0;
+    .course-other-one {
+      margin-bottom: 25px;
     }
 
     .card-other-img-top {
       height: 158.44px;
-      border-radius: 15px 0 0 15px;
     }
-  }
 
-  .course-other-one {
     .card-other-img-top {
-      .logo-other {
-        width: 142px;
-        height: 52px;
-        left: 41px;
-        top: 54px;
-      }
-    }
-  }
-
-  .course-other-two {
-    .card-other-img-top {
-      .logo-other {
-        width: 142px;
-        height: 52px;
-        left: 41px;
-        top: 54px;
-      }
-    }
-  }
-
-  .course-other-three {
-    .card-other-img-top {
-      .logo-other {
-        width: 156px;
-        height: 104px;
-        left: 41px;
-        top: 20px;
+      .logo-course {
+        width: 240px;
+        height: 158.44px;
+        border-radius: 15px 0 0 15px;
       }
     }
   }
