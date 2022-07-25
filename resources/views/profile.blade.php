@@ -2,33 +2,33 @@
 
 @section('content')
 <div class="container-fluid profile">
+    {{-- @foreach ($user as $item ) --}}
     <div class="row justify-content-center">
         <div class="col-md-3 profile-left">
             <div class="infor">
                 <div class="first-infor">
-                    <img class="avatar" src="{{ asset('images/banner.png') }}" alt="">
-                    <div class="name">Nguyen Duc Manh</div>
-                    <div class="email">manht9090@gmail.com</div>
+                    <img class="avatar" src="{{ asset($user->image) }}" alt="">
+                    <div class="name">{{ $user->name }}</div>
+                    <div class="email">{{ $user->email }}</div>
                 </div>
                 <div class="detail-infor">
                     <ul class="detail-infor-item">
                         <li class="item-card">
-                            <p> <span class="font-birth"><i class="fa-solid fa-cake-candles"></i></span> 10/10/2998</p>
+                            <p> <span class="font-birth"><i class="fa-solid fa-cake-candles"></i></span> {{
+                                $user->birthdate_format }}</p>
                         </li>
                         <li class="item-card">
-                            <p> <span class="font-phone"><i class="fa-solid fa-phone"></i></span> 10/10/2998</p>
+                            <p> <span class="font-phone"><i class="fa-solid fa-phone"></i></span> {{ $user->phone }}</p>
                         </li>
                         <li class="item-card">
-                            <p> <span class="font-address"><i class="fa-solid fa-house-chimney"></i></span> 10/10/2998
+                            <p> <span class="font-address"><i class="fa-solid fa-house-chimney"></i></span> {{
+                                $user->address }}
                             </p>
                         </li>
                     </ul>
                 </div>
                 <div class="infor-description">
-                    <p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
-                        dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna
-                        feugiat
-                        rutrum. Nam nulla ippsumipsum, them sss</p>
+                    <p>{{ $user->about_me }}</p>
                 </div>
             </div>
         </div>
@@ -64,9 +64,9 @@
                 <p class="line"></p>
             </div>
             <div class="form-profile">
-                <form method="POST" action="">
+                <form method="POST" action="{{ route('profile.update', $user->id) }}">
                     @csrf
-
+                    @method('PUT')
                     <div class="row form-profile">
                         <div class="col-md-5">
                             <div class="row">
@@ -75,8 +75,9 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input id="name" type="text" class="form-control name-input" name="name"
-                                        value="{{ old('name') }}" autocomplete="name" placeholder="Your name...">
+                                    <input id="name" type="text"
+                                        class="form-control @error('name') is-invalid @enderror name-input" name="name"
+                                        value="{{ $user->name }}" autocomplete="name" placeholder="Your name...">
 
                                     @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -91,8 +92,9 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input id="birthdate" type="date" class="form-control" name="birthdate"
-                                        value="{{ old('birthdate') }}" autocomplete="birthdate"
+                                    <input id="birthdate" type="date"
+                                        class="form-control @error('birthdate') is-invalid @enderror" name="birthdate"
+                                        value="{{ $user->birthdate }}" autocomplete="birthdate"
                                         placeholder="dd/mm/yyyy">
 
                                     @error('birthdate')
@@ -108,8 +110,9 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input id="address" type="text" class="form-control" name="address"
-                                        value="{{ old('address') }}" autocomplete="address"
+                                    <input id="address" type="text"
+                                        class="form-control @error('address') is-invalid @enderror" name="address"
+                                        value="{{ $user->address }}" autocomplete="address"
                                         placeholder="Your address...">
 
                                     @error('address')
@@ -137,8 +140,9 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input id="email" type="text" class="form-control" name="email"
-                                        value="{{ old('email') }}" autocomplete="email" placeholder="Your email...">
+                                    <input id="email" type="text"
+                                        class="form-control @error('email') is-invalid @enderror" name="email"
+                                        value="{{ $user->email }}" autocomplete="email" placeholder="Your email...">
 
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -153,8 +157,9 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input id="phone" type="text" class="form-control" name="phone"
-                                        value="{{ old('phone') }}" autocomplete="phone" placeholder="Your phone...">
+                                    <input id="phone" type="text"
+                                        class="form-control @error('phone') is-invalid @enderror" name="phone"
+                                        value="{{ $user->phone }}" autocomplete="phone" placeholder="Your phone...">
 
                                     @error('phone')
                                     <span class="invalid-feedback" role="alert">
@@ -164,17 +169,18 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label for="about-me"
+                                    <label for="about_me"
                                         class="col-md-4 col-form-label text-md-left p-0 title-label">About
                                         me:</label>
                                 </div>
 
                                 <div class="col-md-12">
-                                    <textarea id="about-me" class="form-control about-textarea" name="about-me"
-                                        value="{{ old('about-me') }}" autocomplete="about-me"
-                                        placeholder="About you..."></textarea>
+                                    <textarea id="about_me"
+                                        class="form-control @error('about_me') is-invalid @enderror about-textarea"
+                                        name="about_me" autocomplete="about_me"
+                                        placeholder="About you...">{{ $user->about_me }}</textarea>
 
-                                    @error('about-me')
+                                    @error('about_me')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -187,5 +193,6 @@
             </div>
         </div>
     </div>
+    {{-- @endforeach --}}
 </div>
 @endsection

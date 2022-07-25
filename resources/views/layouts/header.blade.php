@@ -22,14 +22,17 @@
                         <button type="submit" class="btn nav-link">LOGOUT</button>
                     </form>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('profile.edit',Auth::user()->id) }}">PROFILE</a>
+                </li>
                 @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">LOGIN/REGISTER</a>
                 </li>
-                @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('profile.index') }}">PROFILE</a>
+                    <a class="nav-link" href="{{ route('login') }}">PROFILE</a>
                 </li>
+                @endif
                 @if (Auth::user())
                 <li>
                     <a class="nav-link hello">Xin chào, {{Auth::user()->name}}</a>

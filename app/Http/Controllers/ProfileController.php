@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpdateUserRequest;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -11,9 +13,15 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->user = new User();
+    }
+
     public function index()
     {
-        return view('profile');
+        //
     }
 
     /**
@@ -56,7 +64,8 @@ class ProfileController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        return view('profile', compact('user'));
     }
 
     /**
@@ -66,9 +75,13 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateUserRequest $request, $id)
     {
-        //
+        User::where('id', '=', $id)->update($request->except([
+            '_token',
+            '_method',
+        ]));
+        return redirect('/')->with('success', __('message.update_successful'));
     }
 
     /**

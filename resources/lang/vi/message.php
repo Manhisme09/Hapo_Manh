@@ -3,6 +3,7 @@
 return [
     'login_fail' => 'Tên đăng nhập hoặc mật khẩu không chính xác!',
     'register_successful' => 'Chúc mừng bạn đã đăng ký thành công!',
+    'update_successful' => 'Cập nhập thông tin thành công!',
     'register_error' => 'Đăng ký không thành công',
     'sign_in' => 'Đăng nhập',
     'sign_up' => 'Đăng ký',

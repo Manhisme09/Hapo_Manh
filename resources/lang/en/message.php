@@ -3,6 +3,7 @@
 return [
     'login_fail' => 'Incorrect username or password!',
     'register_successful' => 'Congratulations on your successful registration!',
+    'update_successful' => 'Update information successfully',
     'register_error' => 'Registration failed',
     'sign_in' => 'Sign in',
     'sign_up' => 'Sign up',
