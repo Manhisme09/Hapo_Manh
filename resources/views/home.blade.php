@@ -20,7 +20,7 @@
 
 <section class="container courses">
     <div class="row courses">
-        @foreach ( $otherCourses as $item )
+        @foreach ( $cheapCourses as $item )
         <div class="course-one col-lg-4">
 
             <div class="card item">

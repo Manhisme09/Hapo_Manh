@@ -44,8 +44,8 @@ class Course extends Model
         return $query->limit(config('amount.course_num_home'));
     }
 
-    public function scopeCourses($query)
+    public function scopeShowCheapCourses($query)
     {
-        return $query->limit(config('amount.course_num_home'));
+        return $query->orderBy('price', config('amount.sort_low_to_hight'))->limit(config('amount.course_num_home'));
     }
 }
