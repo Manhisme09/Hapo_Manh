@@ -48,4 +48,24 @@ class Course extends Model
     {
         return $query->orderBy('price', config('amount.sort_low_to_hight'))->limit(config('amount.course_num_home'));
     }
+
+    // public static function getAllCourses()
+    // {
+    //     return Course::get();
+    // }
+
+    public function getTotalLessonsAttribute()
+    {
+        return $this->lessons->count();
+    }
+
+    public function getTotalTimeAttribute()
+    {
+        return $this->lessons->sum('time');
+    }
+
+    public function getTotalLearnersAttribute()
+    {
+        return $this->users->count();
+    }
 }

@@ -1,6 +1,6 @@
 .container-fluid.allcourse-body {
     background-color: #e5e5e5;
-    height: 1400px;
+    height: auto;
 }
 
 .allcourse {
@@ -130,4 +130,33 @@
     color: $greenHapo;
     font-size: 30px;
     margin-bottom: 19px;
+}
+
+.pagination {
+    margin-bottom: 0;
+    margin-left: 687px;
+
+    .page-item {
+        padding-right: 6px;
+    }
+
+    .page-link {
+        color: $greenHapo;
+        border: 1px solid $greenHapo;
+
+        &:hover {
+            background-color: $greenHapo;
+            color: white;
+        }
+    }
+}
+
+.page-item.active .page-link {
+    background-color: $greenHapo;
+    border-color: $greenHapo;
+}
+
+.page-item.disabled .page-link {
+    background-color: $greenHapo;
+    color: white;
 }
