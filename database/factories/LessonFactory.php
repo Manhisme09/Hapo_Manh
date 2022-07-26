@@ -18,6 +18,7 @@ class LessonFactory extends Factory
             'lesson_name' => $this->faker->name(),
             'requirements' => $this->faker->name(),
             'description' => $this->faker->text(),
+            'time' => rand(1, 5),
             'course_id' => $this->faker->randomElement(Course::pluck('id')),
         ];
     }

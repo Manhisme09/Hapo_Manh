@@ -1,49 +1,133 @@
 .container-fluid.allcourse-body {
     background-color: #e5e5e5;
-    height: 900px;
+    height: 1400px;
 }
 
 .allcourse {
+    padding-top: 50px;
     margin: auto;
     width: 1000px;
 
-    .btn-filter {
-        background: #ffffff;
-        border: 1px solid #c4c4c4;
-        border-radius: 5px;
-    }
-
-    .search {
+    .form-search {
         display: flex;
+        width: 544px;
     }
 }
 
-.group-search {
-    form {
-        display: flex;
-    }
-    .input {
-        position: relative;
-        width: 355px;
-        height: 40px;
-        margin: 0 10px 0 10px;
-    }
+.btn-filter,
+.box-search,
+.btn-search,
+.item-title,
+.item-description,
+.course-learners,
+.course-number {
+    font-family: $fontHapo;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    color: black;
+}
 
-    .input-search {
-        width: 355px;
-        height: 40px;
-    }
+.btn-filter {
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #c4c4c4;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
 
-    .search-icon {
-        position: absolute;
-        top: 10px;
-        left: 320px;
-    }
+.box-search {
+    display: flex;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 0;
 
-    .btn-search {
-        background: #b2d235;
-        border: 1px solid #b2d235;
-        border-radius: 5px;
-        color: white;
+    button {
+        border: 0;
+        background: transparent;
     }
+}
+
+.input-search {
+    border: 0;
+    line-height: 38px;
+    width: 90%;
+    padding-left: 9px;
+}
+
+.btn-search {
+    line-height: 38px;
+    border: 1px solid #f1f1f1;
+    font-size: 16px;
+    background-color: $greenHapo;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+
+.list-item {
+    margin-top: 40px;
+}
+
+.box-item {
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.course-item {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.img-item {
+    width: 80px;
+    height: 80px;
+    border-radius: 48px;
+    margin: 20px 0 0 20px;
+}
+
+.item-content {
+    height: 254px;
+    position: relative;
+}
+
+.item-title {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.item-description {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+
+.btn-more {
+    position: absolute;
+    bottom: 40px;
+    right: -10px;
+    background-color: $greenHapo;
+    color: white;
+    width: 106px;
+    height: 42px;
+    border-radius: 22px;
+    border: 0;
+}
+
+.course-learners {
+    font-size: 25px;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.course-number {
+    color: $greenHapo;
+    font-size: 30px;
+    margin-bottom: 19px;
 }
