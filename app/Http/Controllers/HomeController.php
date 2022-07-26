@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Course;
+use App\Models\CourseUser;
+use App\Models\Lesson;
+use App\Models\Review;
 
 class HomeController extends Controller
 {
@@ -11,13 +14,15 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
     {
-        return view('home');
-    }
-
-    public function test()
-    {
-        return view('test');
+        $courses = Course::main()->get();
+        $otherCourses = Course::other()->get();
+        $reviews = Review::main()->get();
+        $totalCourse = Course::count();
+        $totalLesson = Lesson::count();
+        $learners = CourseUser::learner()->get()->count();
+        return view('home', compact('courses', 'otherCourses', 'reviews', 'totalCourse', 'totalLesson', 'learners'));
     }
 }
