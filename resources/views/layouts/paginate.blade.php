@@ -1,24 +1,3 @@
-{{-- <nav>
-    <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="javascript: void(0);" aria-label="Previous">
-                <span aria-hidden="true"><i class="fa-solid fa-arrow-left-long"></i></span>
-            </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="javascript: void(0);">1</a></li>
-        <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
-        <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
-        <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
-        <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
-        <li class="page-item">
-            <a class="page-link" href="javascript: void(0);" aria-label="Next">
-                <span aria-hidden="true"><i class="fa-solid fa-arrow-right-long"></i></span>
-            </a>
-        </li>
-    </ul>
-</nav> --}}
-
-
 @if ($paginator->hasPages())
 <nav>
     <ul class="pagination">
@@ -50,7 +29,7 @@
         @foreach ($elements as $element)
         {{-- "Three Dots" Separator --}}
         @if (is_string($element))
-        <li class="disabled" aria-disabled="true"><span>{{ $element }}</span></li>
+        <li class="disabled page-item" aria-disabled="true"><span>{{ $element }}</span></li>
         @endif
 
         {{-- Array Of Links --}}

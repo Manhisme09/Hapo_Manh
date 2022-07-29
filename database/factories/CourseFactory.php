@@ -17,6 +17,7 @@ class CourseFactory extends Factory
             'course_name' => $this->faker->name(),
             'image' => 'https://source.unsplash.com/random',
             'description' => $this->faker->text(),
+            'created_at' => $this->faker->date(),
             'price' => rand(1000000, 9000000),
         ];
     }
