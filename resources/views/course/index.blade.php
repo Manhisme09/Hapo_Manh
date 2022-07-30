@@ -44,7 +44,7 @@
                             </div>
                             <div class="form-group filter-item select">
                                 <select class="js-select2 one" name="reviews">
-                                    <option value="" disabled selected>{{ __('course.review') }}</option>
+                                    <option value="" selected>{{ __('course.review') }}</option>
                                     <option value="asc" @if(isset($data['reviews']) && $data['reviews']=='asc' )
                                         selected @endif>{{ __('course.ascending') }}</option>
                                     <option value="desc" @if(isset($data['reviews']) && $data['reviews']=='desc' )
@@ -53,7 +53,7 @@
                             </div>
                             <div class="form-group filter-item select">
                                 <select class="js-select2 one" name="learners">
-                                    <option value="" disabled selected>{{ __('course.student_number') }}</option>
+                                    <option value="" selected>{{ __('course.student_number') }}</option>
                                     <option value="asc" @if(isset($data['learners']) && $data['learners']=='asc' )
                                         selected @endif>{{ __('course.ascending') }}</option>
                                     <option value="desc" @if(isset($data['learners']) && $data['learners']=='desc' )
@@ -62,7 +62,7 @@
                             </div>
                             <div class="form-group filter-item select">
                                 <select class="js-select2 one" name="times">
-                                    <option value="" disabled selected>{{ __('course.learn_time') }}</option>
+                                    <option value="" selected>{{ __('course.learn_time') }}</option>
                                     <option value="asc" @if(isset($data['times']) && $data['times']=='asc' ) selected
                                         @endif>{{ __('course.ascending') }}</option>
                                     <option value="desc" @if(isset($data['times']) && $data['times']=='desc' ) selected
@@ -71,7 +71,7 @@
                             </div>
                             <div class="form-group filter-item select">
                                 <select class="js-select2 one" name="lessons">
-                                    <option value="" disabled selected>{{ __('course.lesson_number') }}</option>
+                                    <option value="" selected>{{ __('course.lesson_number') }}</option>
                                     <option value="asc" @if(isset($data['lessons']) && $data['lessons']=='asc' )
                                         selected @endif>{{ __('course.ascending') }}</option>
                                     <option value="desc" @if(isset($data['lessons']) && $data['lessons']=='desc' )

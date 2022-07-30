@@ -72,7 +72,7 @@ class Course extends Model
     public function scopeSearch($query, $data)
     {
         if (isset($_GET['submit'])) {
-            if (isset($data['key_search'])) {
+            if (!empty($data['key_search'])) {
                 $query->where('course_name', 'LIKE', "%{$data['key_search']}%");
             }
 
@@ -96,19 +96,19 @@ class Course extends Model
                     $query->whereIn('user_id', $data['teachers']);
                 });
             }
-            if (isset($data['learners'])) {
+            if (!empty($data['learners'])) {
                 $query->withCount('users')->orderBy('users_count', $data['learners']);
             }
 
-            if (isset($data['lessons'])) {
+            if (!empty($data['lessons'])) {
                 $query->withCount('lessons')->orderBy('lessons_count', $data['lessons']);
             }
 
-            if (isset($data['times'])) {
+            if (!empty($data['times'])) {
                 $query->withSum('lessons', 'time')->orderBy('lessons_sum_time', $data['times']);
             }
 
-            if (isset($data['reviews'])) {
+            if (!empty($data['reviews'])) {
                 $query->withCount('reviews')->orderBy('reviews_count', $data['reviews']);
             }
             return $query;
