@@ -81,10 +81,10 @@
                             <div class="form-group filter-item select">
                                 <select
                                     class="js-select2 js-placeholder-multiple-{{ __('course.teacher') }} js-states more"
-                                    id="teacher" name="teacher[]" multiple="multiple">
+                                    id="teachers" name="teachers[]" multiple="multiple">
                                     @foreach ($teachers as $teacher )
-                                    <option value="{{ $teacher->id }}" @if(isset($data['teacher']) &&
-                                        in_array($teacher->id, $data['teacher']))
+                                    <option value="{{ $teacher->id }}" @if(isset($data['teachers']) &&
+                                        in_array($teacher->id, $data['teachers']))
                                         selected @endif>{{ $teacher->name }}</option>
                                     @endforeach
                                 </select>
