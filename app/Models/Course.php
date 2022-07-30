@@ -29,6 +29,11 @@ class Course extends Model
         return $this->belongsToMany(User::class);
     }
 
+    public function teachers()
+    {
+        return $this->belongsToMany(User::class, 'course_teacher', 'course_id', 'user_id');
+    }
+
     public function reviews()
     {
         return $this->hasMany(Review::class);
@@ -87,8 +92,8 @@ class Course extends Model
             }
 
             if (isset($data['teachers'])) {
-                $query->whereHas('users', function ($query) use ($data) {
-                    $query->where('users.role', config('roles.teacher'))->whereIn('user_id', $data['teachers']);
+                $query->whereHas('teachers', function ($query) use ($data) {
+                    $query->whereIn('user_id', $data['teachers']);
                 });
             }
             if (isset($data['learners'])) {

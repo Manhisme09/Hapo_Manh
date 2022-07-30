@@ -13,11 +13,6 @@ class CourseTeacher extends Model
 
     protected $table = 'course_teacher';
 
-    protected $primaryKey = [
-        'user_id',
-        'course_id'
-    ];
-
     protected $fillable = [
         'course_id',
         'user_id',
