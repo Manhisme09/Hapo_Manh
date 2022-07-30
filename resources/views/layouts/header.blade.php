@@ -9,25 +9,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto w-100">
-                <li class="nav-item">
+                <li class="nav-item {{ (request()->segment(1) == '') ? 'active-menu' : '' }}">
                     <a class="nav-link" href="{{ route('home') }}">HOME <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{ (request()->segment(1) == 'courses') ? 'active-menu' : '' }}">
                     <a class="nav-link" href="{{ route('courses.index') }}">ALL COURSES</a>
                 </li>
                 @if(Auth::user())
-                <li class="nav-item">
+                <li class="nav-item {{ (request()->segment(1) == 'logout') ? 'active-menu' : '' }}">
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
                         <button type="submit" class="btn nav-link">LOGOUT</button>
                     </form>
                 </li>
                 @else
-                <li class="nav-item">
+                <li
+                    class="nav-item {{ ((request()->segment(1) == 'login') || (request()->segment(1) == 'register')) ? 'active-menu' : '' }}">
                     <a class="nav-link" href="{{ route('login') }}">LOGIN/REGISTER</a>
                 </li>
                 @endif
-                <li class="nav-item">
+                <li class="nav-item {{ (request()->segment(1) == 'profile') ? 'active-menu' : '' }}">
                     <a class="nav-link" href="#">PROFILE</a>
                 </li>
                 @if (Auth::user())

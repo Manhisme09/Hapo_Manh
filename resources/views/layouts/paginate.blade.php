@@ -3,20 +3,12 @@
     <ul class="pagination">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-        {{-- <li class="disabled" aria-disabled="true" aria-label="@lang('pagination.previous')">
-            <span aria-hidden="true">&lsaquo;</span>
-        </li> --}}
-
         <li class="page-item disabled" aria-disabled="true" aria-label="@lang('pagination.previous')">
             <a class="page-link" href="javascript: void(0);" aria-label="Previous">
                 <span aria-hidden="true"><i class="fa-solid fa-arrow-left-long"></i></span>
             </a>
         </li>
         @else
-        {{-- <li>
-            <a href="{{ $paginator->previousPageUrl() }}" rel="prev"
-                aria-label="@lang('pagination.previous')">&lsaquo;</a>
-        </li> --}}
         <li class="page-item">
             <a class="page-link" href="{{ $paginator->previousPageUrl() }}" rel="prev"
                 aria-label="@lang('pagination.previous')">
@@ -36,11 +28,9 @@
         @if (is_array($element))
         @foreach ($element as $page => $url)
         @if ($page == $paginator->currentPage())
-        {{-- <li class="active" aria-current="page"><span>{{ $page }}</span></li> --}}
         <li class="page-item active" aria-current="page"><a class="page-link" href="javascript: void(0);">{{ $page
                 }}</a></li>
         @else
-        {{-- <li><a href="{{ $url }}">{{ $page }}</a></li> --}}
         <li class="page-item"><a class="page-link" href="{{ $url }}">{{ $page }}</a></li>
 
         @endif
@@ -50,10 +40,6 @@
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-        {{-- <li>
-            <a href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')">&rsaquo;</a>
-        </li> --}}
-
         <li class="page-item">
             <a class="page-link" href="{{ $paginator->nextPageUrl() }}" rel="next"
                 aria-label="@lang('pagination.next')">
@@ -61,10 +47,6 @@
             </a>
         </li>
         @else
-        {{-- <li class="disabled" aria-disabled="true" aria-label="@lang('pagination.next')">
-            <span aria-hidden="true">&rsaquo;</span>
-        </li> --}}
-
         <li class="page-item disabled" aria-disabled="true" aria-label="@lang('pagination.next')">
             <a class="page-link" href="javascript: void(0);" aria-label="Next">
                 <span aria-hidden="true"><i class="fa-solid fa-arrow-right-long"></i></span>

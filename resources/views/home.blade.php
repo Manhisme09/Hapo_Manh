@@ -62,7 +62,7 @@
         @endforeach
     </div>
     <div class="view-all">
-        <a href="#">View All Our Courses <i class="fa-solid fa-arrow-right-long"></i> </a>
+        <a href="{{ route('courses.index') }}">View All Our Courses <i class="fa-solid fa-arrow-right-long"></i> </a>
     </div>
 </section>
 
