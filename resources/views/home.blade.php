@@ -30,7 +30,7 @@
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
                         <h5 class="card-title">{{ $item['course_name'] }}</h5>
-                        <p class="card-text">{{ Str::limit($item['description'], 100) }}</p>
+                        <p class="card-text">{{ Str::limit($item['description'], 120) }}</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
                 </div>
@@ -167,15 +167,15 @@
             <div class="row">
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Courses</p>
-                    <p class="statistic-quantity">{{ $totalCourse }}</p>
+                    <p class="statistic-quantity">{{ number_format($totalCourse) }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Lessons</p>
-                    <p class="statistic-quantity">{{ $totalLesson }}</p>
+                    <p class="statistic-quantity">{{ number_format($totalLesson) }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">{{ $learners }}</p>
+                    <p class="statistic-quantity">{{ number_format($learners) }}</p>
                 </div>
             </div>
         </div>
