@@ -71,16 +71,20 @@ class Course extends Model
 
     public function scopeSearch($query, $data)
     {
-        if (isset($_GET['submit'])) {
+        if (isset($data['submit'])) {
             if (!empty($data['key_search'])) {
-                $query->where('course_name', 'LIKE', "%{$data['key_search']}%");
+                $query->where(
+                    'course_name',
+                    'LIKE',
+                    "%{$data['key_search']}%"
+                )->orWhere('description', 'LIKE', "%{$data['key_search']}%");
             }
 
-            if (isset($data['created_time']) && $data['created_time'] == config('course.oldest')) {
+            if ($data['created_time'] == config('course.oldest')) {
                 $query->orderBy('created_at', config('amount.sort_low_to_hight'));
             }
 
-            if (isset($data['created_time']) && $data['created_time'] == config('course.newest')) {
+            if ($data['created_time'] == config('course.newest')) {
                 $query->orderBy('created_at', config('amount.sort_hight_to_low'));
             }
 

@@ -32,7 +32,7 @@
                         <div class="element">
                             <div class="form-group filter-item">
                                 <input type="radio" id="newest" name="created_time" value="newest"
-                                    class="form-control hidden" @if( isset($data['created_time']) &&
+                                    class="form-control hidden" @if( !isset($data['created_time']) ||
                                     $data['created_time']=='newest' ) checked @endif>
                                 <label for="newest" class="newest">{{ __('course.last_est') }}</label>
                             </div>

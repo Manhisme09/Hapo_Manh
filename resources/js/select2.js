@@ -13,7 +13,4 @@ $(document).ready(function() {
         placeholder: "Tags",
     });
 
-    // $('.btn-filter').click(function () {
-    //     $('.filter').toggleClass('active');
-    // });
 });

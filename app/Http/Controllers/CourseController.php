@@ -17,7 +17,6 @@ class CourseController extends Controller
     public function index(Request $request)
     {
         $data = $request->all();
-
         $teachers = User::teachers()->get();
         $tags = Tag::get();
 
