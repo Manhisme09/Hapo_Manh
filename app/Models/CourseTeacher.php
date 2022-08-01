@@ -11,10 +11,7 @@ class CourseTeacher extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $primaryKey = [
-        'user_id',
-        'course_id'
-    ];
+    protected $table = 'course_teacher';
 
     protected $fillable = [
         'course_id',

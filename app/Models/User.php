@@ -45,4 +45,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Review::class);
     }
+
+    public function scopeTeachers($query)
+    {
+        return $query->where('role', '=', config('roles.teacher'));
+    }
 }

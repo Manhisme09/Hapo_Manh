@@ -1,5 +1,14 @@
 .navbar-nav {
   justify-content: flex-end;
+
+  .active-menu {
+    background-color: $greenHapo;
+    border-radius: 17px;
+
+    .nav-link {
+      color: white !important;
+    }
+  }
 }
 
 .example {
