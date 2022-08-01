@@ -24,7 +24,7 @@
                 </li>
                 @else
                 <li
-                    class="nav-item {{ ((Request::route()->getName() == 'login') || (request()->segment(1) == 'register')) ? 'active-menu' : '' }}">
+                    class="nav-item {{ ((Request::route()->getName() == 'login') || (Request::route()->getName() == 'register')) ? 'active-menu' : '' }}">
                     <a class="nav-link" href="{{ route('login') }}">LOGIN/REGISTER</a>
                 </li>
                 @endif
