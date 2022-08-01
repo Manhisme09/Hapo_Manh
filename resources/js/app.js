@@ -7,7 +7,6 @@
 require('./bootstrap');
 require('./slick');
 require('./select2');
-require('./filter');
 
 import 'select2';
 import 'slick-carousel/slick/slick';
