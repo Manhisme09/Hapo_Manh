@@ -173,7 +173,7 @@
             </div>
             @endif
         </div>
-        {{ $courses->appends(request()->input())->links('layouts.paginate') }}
+        {{ $courses->appends(request()->input())->links() }}
     </div>
 </div>
 @endsection
